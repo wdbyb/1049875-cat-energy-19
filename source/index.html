@@ -6,11 +6,13 @@
   </head>
   <body>
     <header class="page-header">
-      <div>
-        <img class="page-header__logo-image" src="https://via.placeholder.com/image/50x50" width="50" height="50" alt="Логотип компании">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo-link" href="">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/image/50x50" width="50" height="50" alt="Логотип компании">
+        </a>
       </div>
-      <div>
-        <img class="page-header__logo-name" src="#" width="200" height="50" alt="Название компании">
+      <div class="page-header__company-wrapper">
+        <img class="page-header__company-name" src="#" width="200" height="50" alt="Название компании">
       </div>
 
       <nav class="main-nav">
@@ -18,13 +20,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Каталог продукции</a>
+              <a class="site-list__link site-list__link--active">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a>Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -39,7 +41,7 @@
         <div>
           <img src="#" width="" height="" alt="Коробочка корма">
         </div>
-        <a class="top-bar__link">Подобрать программу</a>
+        <a class="top-bar__link" href="">Подобрать программу</a>
       </section>
 
       <section class="categories">
@@ -48,12 +50,12 @@
           <li class="categories__item">
             <h3 class="categories__title categories__title--loss">Похудение</h3>
             <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="categories__link">Каталог slim</a>
+            <a class="categories__link" href="">Каталог slim</a>
           </li>
           <li class="categories__item categories__item--gain">
             <h3 class="categories__title">Набор массы</h3>
             <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="categories__link">Каталог pro</a>
+            <a class="categories__link" href="">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -76,22 +78,24 @@
         </ul>
       </section>
 
-      <section class="before-after">
-        <h2 class="before-after__title">Живой пример</h2>
-        <p class="before-after__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="before-after__list">
-          <li class="before-after__item">
+      <!--TODO изменить класс секции с before-after на example (или example-proof) -->
+
+      <section class="example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <ul class="example__list">
+          <li class="example__item">
             5 кг снижение веса
           </li>
-          <li class="before-after__item">
+          <li class="example__item">
             60 дней затрачено времени
           </li>
         </ul>
-        <p class="before-after__price">Затраты на питание: 15 000 руб.</p>
+        <p class="example__price">Затраты на питание: 15 000 руб.</p>
         <div>
-          <img class="before-after__image" src="#" width="" height="" alt="До и после">
+          <img class="example__image" src="#" width="" height="" alt="До и после">
         </div>
-        <div class="before-after__scale">
+        <div class="example__scale">
           Было
           <input type="range">
           Стало
@@ -102,20 +106,29 @@
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <div class="contacts__image-wrapper">
-          <img class="contacts__image" src="#" alt="Карта. Как к нам проехать">
+          <img class="contacts__image" src="#" width="" height="" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div>
-        <img class="page-footer__logo-name" src="#" alt="Название компании">
+        <img class="page-footer__company-name" src="#" alt="Название компании">
       </div>
+
       <ul class="page-footer__list social-list">
-        <li class="social-list__item">Вконтакте</li>
-        <li class="social-list__item">Фейсбук</li>
-        <li class="social-list__item">Инстаграм</li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#vk" aria-label="Вконтакте"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#fb" aria-label="Фейсбук"></a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#insta" aria-label="Инстаграм"></a>
+        </li>
       </ul>
-      <p class="page-footer__academy">HTML Academy</p>
+      <p class="page-footer__academy">
+        <a class="page-footer__academy-link" href="#htmlacademy">HTML Academy</a>
+      </p>
     </footer>
   </body>
 </html>
