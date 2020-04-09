@@ -2,12 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Сайт Кэт энерджи</title>
+    <title>Форма &vert; Интернет магазина &laquo;Кэт энерджи&raquo;</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="">
+        <a class="page-header__logo-link" href="index.html" aria-label="Переход на главную страницу">
           <img class="page-header__logo-image" src="https://via.placeholder.com/image/50x50" width="50" height="50" alt="Логотип компании">
         </a>
       </div>
@@ -18,27 +18,27 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--active">Подбор программы</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <section>
-        <h1 class="visually-hidden">Анкета для подбора программы питания для вашего кота</h1>
-      </section>
+      <h1 class="visually-hidden">Анкета для подбора программы питания для вашего кота</h1>
 
-      <h2 class="page-main__title">Подбор программы</h2>
-      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <section class="intro">
+        <h2 class="intro__title">Подбор программы</h2>
+        <p class="intro__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </section>
 
       <section class="order">
         <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -70,8 +70,8 @@
                 <label for="gain-weight">Набор массы</label>
               </li>
               <li class="order__item">
-                <input class="order__radio" type="radio" name="categories" id="dunno" value="dunno">
-                <label for="dunno">Не знаю (нужен ваш совет)</label>
+                <input class="order__radio" type="radio" name="categories" id="need-advice" value="need-advice">
+                <label for="need-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -122,33 +122,38 @@
         </form>
       </section>
 
-      <section class="contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <div class="contacts__image-wrapper">
-          <img class="contacts__image" src="#" width="" height="" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <section class="contact">
+        <h2 class="contact__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contact__image-wrapper">
+          <img class="contact__image" src="#" width="50" height="50" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div>
+      <div class="page-footer__company-wrapper">
         <img class="page-footer__company-name" src="#" alt="Название компании">
       </div>
 
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#vk" aria-label="Вконтакте"></a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#vk" aria-label="Вконтакте"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#fb" aria-label="Фейсбук"></a>
+        <li class="social__item">
+          <a class="social__link" href="#fb" aria-label="Фейсбук"></a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#insta" aria-label="Инстаграм"></a>
+        <li class="social__item">
+          <a class="social__link" href="#insta" aria-label="Инстаграм"></a>
         </li>
       </ul>
-      <p class="page-footer__academy">
-        <a class="page-footer__academy-link" href="#htmlacademy">HTML Academy</a>
+      <p class="page-footer__academy-name">
+        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">HTML Academy</a>
       </p>
+      <div class="page-footer__academy-logo-wrapper">
+        <a class="page-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">
+          <img class="page-footer__academy-logo" src="#" width="50" height="50" alt="Логотип HTML academy">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
