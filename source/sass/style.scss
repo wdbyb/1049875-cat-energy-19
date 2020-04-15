@@ -1,0 +1,23 @@
+@import "reset.scss";
+@import "visually-hidden.scss";
+@import "top-bar.scss";
+@import "category.scss";
+@import "example.scss";
+@import "page-footer.scss";
+@import "advantage.scss";
+@import "contact.scss";
+@import "catalog-additional.scss";
+@import "intro.scss";
+@import "catalog-main.scss";
+@import "main-nav.scss";
+@import "order.scss";
+@import "social.scss";
+@import "page-header.scss";
+@import "page-main.scss";
+
+body {
+  width: 320px;
+  margin: auto;
+
+  font-family: "Oswald", "Arial", sans-serif;
+}
