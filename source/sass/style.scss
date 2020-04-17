@@ -1,23 +1,23 @@
-@import "reset.scss";
-@import "visually-hidden.scss";
-@import "top-bar.scss";
-@import "category.scss";
-@import "example.scss";
-@import "page-footer.scss";
-@import "advantage.scss";
-@import "contact.scss";
-@import "catalog-additional.scss";
-@import "intro.scss";
-@import "catalog-main.scss";
-@import "main-nav.scss";
-@import "order.scss";
-@import "social.scss";
-@import "page-header.scss";
-@import "page-main.scss";
+@import "libs/normalize.scss";
+@import "libs/visually-hidden.scss";
 
-body {
-  width: 320px;
-  margin: auto;
+@import "utils/reset.scss";
 
-  font-family: "Oswald", "Arial", sans-serif;
-}
+@import "base/global.scss";
+
+@import "components/button.scss";
+
+@import "layout/top-bar.scss";
+@import "layout/category.scss";
+@import "layout/example.scss";
+@import "layout/page-footer.scss";
+@import "layout/advantage.scss";
+@import "layout/contact.scss";
+@import "layout/catalog-additional.scss";
+@import "layout/intro.scss";
+@import "layout/catalog-main.scss";
+@import "layout/main-nav.scss";
+@import "layout/order.scss";
+@import "layout/social.scss";
+@import "layout/page-header.scss";
+@import "layout/page-main.scss";
