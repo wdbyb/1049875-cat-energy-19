@@ -1,0 +1,21 @@
+.intro {
+  min-height: 50px;
+
+  padding: 0;
+  outline: 2px solid orange;
+}
+
+.intro__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 400;
+}
+
+.intro__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+  font-weight: 400;
+}

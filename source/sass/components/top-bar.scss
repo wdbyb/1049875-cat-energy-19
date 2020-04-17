@@ -1,0 +1,51 @@
+.top-bar {
+  position: relative;
+
+  min-height: 480px;
+
+  padding: 0;
+
+  outline: 2px solid blue;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    width: 320px;
+    height: 305px;
+
+    top: 0;
+    right: 0;
+
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.top-bar__title {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.top-bar__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.top-bar__link {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #68b738;
+  text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+.order {
+  min-height: 1170px;
+
+  padding: 0;
+  outline: 2px solid violet;
+}
+
+.order__item {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.order__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: #111111;
+}
+
+.order__submit-button {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #68b738;
+  border: none;
+
+  font: inherit;
+}
+
+.order__must-info {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}

@@ -1,0 +1,45 @@
+.catalog-main {
+  min-height: 1635px;
+
+  padding: 0;
+  outline: 2px solid gold;
+}
+
+.catalog-main__title {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-main__watch-more {
+  text-transform: uppercase;
+  color: #111111;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-main__more-description {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  font-weight: 400;
+}
+
+.catalog-main__more-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog-main__row {
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
