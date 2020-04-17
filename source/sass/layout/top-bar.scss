@@ -2,11 +2,10 @@
   position: relative;
 
   width: 280px;
+  min-height: 480px;
+
   padding-left: 20px;
   padding-right: 20px;
-
-  /* 200px для наглядности; истинный отступ = 22px. */
-  padding-bottom: 200px;
   padding-top: 24px;
 
   outline: 2px solid blue;
