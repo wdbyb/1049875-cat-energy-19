@@ -1,3 +1,11 @@
+.catalog-main {
+  width: 280px;
+  min-height: 1635px;
+
+  padding: 25px 20px;
+  outline: 2px solid gold;
+}
+
 .catalog-main__title {
   text-transform: uppercase;
   color: #111111;
@@ -35,19 +43,4 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-}
-
-.catalog-main__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #68b738;
-  text-transform: uppercase;
-  font-weight: 400;
-}
-
-.catalog-main {
-  width: 280px;
-  padding: 25px 20px;
-  outline: 2px solid gold;
 }
