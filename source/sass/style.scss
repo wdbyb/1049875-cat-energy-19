@@ -1,23 +1,23 @@
 @import "libs/normalize.scss";
 @import "libs/visually-hidden.scss";
+@import "libs/font-face.scss";
 
 @import "utils/reset.scss";
 
 @import "base/global.scss";
 
 @import "components/button.scss";
-
-@import "layout/top-bar.scss";
-@import "layout/category.scss";
-@import "layout/example.scss";
-@import "layout/page-footer.scss";
-@import "layout/advantage.scss";
-@import "layout/contact.scss";
-@import "layout/catalog-additional.scss";
-@import "layout/intro.scss";
-@import "layout/catalog-main.scss";
-@import "layout/main-nav.scss";
-@import "layout/order.scss";
-@import "layout/social.scss";
-@import "layout/page-header.scss";
-@import "layout/page-main.scss";
+@import "components/top-bar.scss";
+@import "components/category.scss";
+@import "components/example.scss";
+@import "components/page-footer.scss";
+@import "components/advantage.scss";
+@import "components/contact.scss";
+@import "components/catalog-additional.scss";
+@import "components/intro.scss";
+@import "components/catalog-main.scss";
+@import "components/main-nav.scss";
+@import "components/order.scss";
+@import "components/social.scss";
+@import "components/page-header.scss";
+@import "components/page-main.scss";
