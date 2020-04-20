@@ -1,14 +1,38 @@
 .page-footer {
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
   margin: auto;
-  padding: 0 20px;
 
   background-color: #f2f2f2;
   min-height: 176px;
 
-  outline: 2px solid brown;
+  outline: 2px solid blue;
 }
 
+.page-footer__logo-footer {
+  padding: 33px 75px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 9px 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.page-footer__academy-link {
+  color: #444444;
+}
+
+/*
 @media (min-width: 768px) {
   .page-footer {
     width: 708px;
@@ -28,3 +52,4 @@
   font-size: 16px;
   line-height: 16px;
 }
+*/

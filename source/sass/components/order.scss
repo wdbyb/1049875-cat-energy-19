@@ -1,11 +1,17 @@
 .order {
-  min-height: 1170px;
+  min-height: 1232px;
 
   padding: 0;
   outline: 2px solid violet;
 }
 
 .order__item {
+  display: flex;
+  align-items: center;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -33,4 +39,34 @@
   font-size: 14px;
   line-height: 16px;
   color: #444444;
+}
+
+.order__name-label,
+.order__email-label,
+.order__tel-label {
+  order: 1;
+
+  margin-right: 14px;
+}
+
+.order__name,
+.order__email,
+.order__tel {
+  width: 100%;
+  padding: 12px 12px;
+  order: 2;
+}
+
+.order__radio-fieldset {
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+}
+
+.order__radio-label {
+  margin-left: 10px;
+}
+
+.order__title {
+  padding-top: 25px;
+  padding-bottom: 15px;
 }

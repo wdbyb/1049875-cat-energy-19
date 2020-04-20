@@ -1,11 +1,14 @@
 .example {
   background-color: #f2f2f2;
   min-height: 650px;
-  padding: 0;
+  padding-top: 18px;
+  padding-bottom: 37px;
   outline: 2px solid tomato;
 }
 
 .example__title {
+  margin-bottom: 23px;
+
   color: #111111;
   font-size: 36px;
   line-height: 60px;
@@ -13,12 +16,62 @@
 }
 
 .example__description {
+  width: 270px;
+  margin-bottom: 24px;
+
   color: #444444;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
 
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  position: relative;
+
+  width: 85px;
+
+  padding: 13px 18px;
+  padding-bottom: 18px;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.example__item-low {
+  position: absolute;
+
+  display: block;
+
+  bottom: -15px;
+  left: 20px;
+
+  width: 80px;
+
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  background-color: #f2f2f2;
+}
+
 .example__price {
+  margin-left: 47px;
+  margin-top: 34px;
+  margin-bottom: 35px;
+
   color: #111111;
   font-size: 14px;
   line-height: 20px;
@@ -26,8 +79,14 @@
 }
 
 .example__scale {
+  margin-left: 45px;
+
   color: #111111;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__image {
+  margin-bottom: 24px;
 }

@@ -1,9 +1,10 @@
 .top-bar {
   position: relative;
 
-  min-height: 480px;
+  min-height: 440px;
 
   padding: 0;
+  padding-top: 25px;
 
   outline: 2px solid blue;
 
@@ -34,6 +35,8 @@
 }
 
 .top-bar__description {
+  margin-top: 25px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 14px;
@@ -42,7 +45,14 @@
   text-transform: uppercase;
 }
 
+.top-bar__image {
+  margin-top: 30px;
+}
+
 .top-bar__link {
+  margin-top: 1px;
+  margin-bottom: 24px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;

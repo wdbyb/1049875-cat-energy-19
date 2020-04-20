@@ -1,11 +1,13 @@
 .intro {
-  min-height: 50px;
+  min-height: 105px;
 
   padding: 0;
   outline: 2px solid orange;
 }
 
 .intro__title {
+  padding: 15px 0;
+
   font-size: 36px;
   line-height: 60px;
   color: #111111;
