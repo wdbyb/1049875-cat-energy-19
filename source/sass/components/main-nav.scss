@@ -27,3 +27,22 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    min-height: 65px;
+  }
+
+  .site-nav {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

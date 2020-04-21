@@ -32,24 +32,63 @@
   color: #444444;
 }
 
-/*
-@media (min-width: 768px) {
-  .page-footer {
-    width: 708px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .page-footer {
-    width: 1220px;
-    padding: 0 110px;
-  }
-}
-
 .page-footer__academy-link {
   color: #444444;
   font-size: 16px;
   line-height: 16px;
 }
-*/
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 708px;
+    padding: 0 30px;
+    margin: auto;
+
+    background-color: #f2f2f2;
+    min-height: 150px;
+
+    outline: 2px solid blue;
+  }
+
+  .page-footer__logo-footer {
+    width: 250px;
+
+    padding: 33px 0;
+    border-bottom: 0;
+  }
+
+  .page-footer__academy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 180px;
+
+    padding: 9px 0;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .page-footer__academy-link {
+    color: #444444;
+  }
+
+  .page-footer__academy-link {
+    color: #444444;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer {
+    width: 1440px;
+  }
+}

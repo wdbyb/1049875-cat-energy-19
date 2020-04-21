@@ -59,3 +59,54 @@
   background-color: #68b738;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .top-bar {
+    min-height: 850px;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .top-bar__link {
+    position: relative;
+    margin-top: -150px;
+  }
+
+  .top-bar__title {
+    width: 427px;
+
+    margin-left: 90px;
+
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+
+    z-index: 1;
+  }
+
+  .top-bar__description {
+    width: 427px;
+
+    margin-left: 90px;
+
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+
+    z-index: 1;
+  }
+
+  .top-bar__image {
+    position: relative;
+    margin-top: -50px;
+
+    z-index: -1;
+  }
+}
