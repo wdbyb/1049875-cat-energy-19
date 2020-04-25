@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
 
-  width: 320px;
+  width: 280px;
   margin: auto;
+  padding: 0 20px;
 
   background-color: #f2f2f2;
   min-height: 176px;
@@ -47,12 +48,8 @@
 
     width: 708px;
     padding: 0 30px;
-    margin: auto;
 
-    background-color: #f2f2f2;
     min-height: 150px;
-
-    outline: 2px solid blue;
   }
 
   .page-footer__logo-footer {
@@ -63,32 +60,13 @@
   }
 
   .page-footer__academy {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     width: 180px;
-
-    padding: 9px 0;
-
-    font-family: "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-  }
-
-  .page-footer__academy-link {
-    color: #444444;
-  }
-
-  .page-footer__academy-link {
-    color: #444444;
-    font-size: 16px;
-    line-height: 16px;
   }
 }
 
 @media (min-width: 1440px) {
   .page-footer {
-    width: 1440px;
+    width: 1220px;
+    padding: 0 110px;
   }
 }
