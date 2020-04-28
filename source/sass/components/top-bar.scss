@@ -1,6 +1,7 @@
 .top-bar {
   position: relative;
 
+  width: auto;
   min-height: 440px;
 
   padding: 0;
@@ -50,6 +51,8 @@
 }
 
 .top-bar__link {
+  width: auto;
+
   margin-top: 1px;
   margin-bottom: 24px;
 

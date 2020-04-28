@@ -6,7 +6,9 @@
 
 .contact__top-block {
   display: flex;
+  justify-content: space-between;
 
+  padding: 0 20px;
   padding-top: 27px;
   padding-bottom: 27px;
 }
@@ -46,8 +48,7 @@
   .contact__top-block {
     justify-content: space-between;
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 30px;
   }
 
   .contact__title {

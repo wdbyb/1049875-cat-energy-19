@@ -1,20 +1,4 @@
 .page-main {
-  width: 280px;
+  width: auto;
   margin: auto;
-  padding: 0 20px;
-}
-
-
-@media (min-width: 768px) {
-  .page-main {
-    width: 708px;
-    padding: 0 30px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .page-main {
-    width: 1220px;
-    padding: 0 110px;
-  }
 }
