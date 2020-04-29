@@ -2,19 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Форма &vert; Интернет магазина &laquo;Кэт энерджи&raquo;</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="index.html" aria-label="Переход на главную страницу">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/image/50x50" width="50" height="50" alt="Логотип компании">
-        </a>
-      </div>
-      <div class="page-header__company-wrapper">
-        <img class="page-header__company-name" src="#" width="200" height="50" alt="Название компании">
-      </div>
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Логотип компании">
+      </a>
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -46,115 +42,129 @@
           <fieldset class="order__fieldset reset-fieldset">
             <ul class="order__list reset-list">
               <li class="order__item">
-                <input class="order__name" type="text" name="name" id="name" value="" required>
-                <label for="name">Имя:*</label>
+                <input class="order__name" type="text" name="name" id="name" value="" required placeholder="БАРСИК">
+                <label class="order__name-label" for="name">Имя:*</label>
               </li>
               <li class="order__item">
-                <input class="order__weight" type="text" name="weight" id="weight" value="" required>
-                <label for="weight">Вес (кг):*</label>
+                <input class="order__name" type="text" name="weight" id="weight" value="" required placeholder="7">
+                <label class="order__name-label" for="weight">Вес (кг):*</label>
               </li>
               <li class="order__item">
-                <input class="order__age" type="text" name="age" id="age" value="">
-                <label for="age">Возраст (лет):</label>
+                <input class="order__name" type="text" name="age" id="age" value="" placeholder="7">
+                <label class="order__name-label" for="age">Возраст (лет):</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset reset-fieldset">
+          <fieldset class="order__radio-fieldset reset-fieldset">
             <ul class="order__list reset-list">
               <li class="order__item">
                 <input class="order__radio" type="radio" name="categories" id="loss-weight" value="loss-weight">
-                <label for="loss-weight">Похудение</label>
+                <label class="order__radio-label" for="loss-weight">Похудение</label>
               </li>
               <li class="order__item">
                 <input class="order__radio" type="radio" name="categories" id="gain-weight" value="gain-weight">
-                <label for="gain-weight">Набор массы</label>
+                <label class="order__radio-label" for="gain-weight">Набор массы</label>
               </li>
               <li class="order__item">
                 <input class="order__radio" type="radio" name="categories" id="need-advice" value="need-advice">
-                <label for="need-advice">Не знаю (нужен ваш совет)</label>
+                <label class="order__radio-label" for="need-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset reset-fieldset">
+          <fieldset class="order__fieldset contacts-info reset-fieldset">
             <legend class="order__title">Контактные данные (владельца кота)</legend>
             <ul class="order__list reset-list">
               <li class="order__item">
-                <input class="order__email" type="email" name="email" id="email" value="" required>
-                <label for="email">E-mail:*</label>
+                <input class="order__email" type="email" name="email" id="email" value="" required placeholder="KUKLACHEV@GMAIL.COM">
+                <label class="order__email-label" for="email">E-mail:*</label>
               </li>
               <li class="order__item">
-                <input class="order__tel" type="tel" name="telephone" id="telephone" value="" required>
-                <label for="telephone">Телефон:*</label>
+                <input class="order__tel" type="tel" name="telephone" id="telephone" value="" required placeholder="8 (960) 900-60-90">
+                <label class="order__tel-label" for="telephone">Телефон:*</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="order__fieldset reset-fieldset">
+          <fieldset class="order__fieldset comment-fieldset reset-fieldset">
             <legend class="order__title">Комментарий</legend>
-            <textarea class="order__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="order__comment" name="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
           </fieldset>
 
           <fieldset class="order__fieldset reset-fieldset">
             <legend class="order__title">Дополнительно</legend>
-            <ul class="order__list reset-list">
+            <ul class="order__list order__list--additional reset-list">
               <li class="order__item">
                 <input class="order__checkbox" type="checkbox" name="sweetener" id="sweetener" value="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
+                <label class="order__checkbox-label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="order__item">
                 <input class="order__checkbox" type="checkbox" name="water" id="water" value="water">
-                <label for="water">Питьевая вода</label>
+                <label class="order__checkbox-label" for="water">Питьевая вода</label>
               </li>
               <li class="order__item">
                 <input class="order__checkbox" type="checkbox" name="milk" id="milk" value="milk">
-                <label for="milk">Молоко</label>
+                <label class="order__checkbox-label" for="milk">Молоко</label>
               </li>
               <li class="order__item">
                 <input class="order__checkbox" type="checkbox" name="vitamins" id="vitamins" value="vitamins">
-                <label for="vitamins">Витамины</label>
+                <label class="order__checkbox-label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
 
-          <button class="order__submit-button button" type="submit">Отправить заявку</button>
-          <p class="order__must-info reset-text"><sup>*</sup> — Обязательные поля</p>
+          <div class="submit">
+            <button class="order__submit-button button" type="submit">Отправить заявку</button>
+            <p class="order__must-info reset-text"><sup>*</sup> — Обязательные поля</p>
+          </div>
         </form>
       </section>
 
-      <section class="contact">
-        <h2 class="contact__title reset-text">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <section class="contact contact--catalog-form">
+        <div class="contact__top-block">
+          <h2 class="contact__title reset-text">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <address class="contact__address">ул. Большая<br> Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <div class="contact__image-wrapper">
-          <img class="contact__image" src="#" width="50" height="50" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="contact__image" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__company-wrapper">
-        <img class="page-footer__company-name" src="#" alt="Название компании">
+      <div class="page-footer__logo-footer-wrapper">
+        <img class="page-footer__logo-footer" src="../img/logo-footer.svg" width="128" height="24" alt="Название компании">
       </div>
 
       <ul class="page-footer__social social reset-list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#vk" aria-label="Вконтакте"></a>
+          <a class="social__link" href="#vk" aria-label="Вконтакте">
+            <img class="social__logo social__logo--vk" src="../img/icon-vk.svg" width="22" height="12" alt="Логотип вконтакте">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--insta" href="#fb" aria-label="Фейсбук"></a>
+          <a class="social__link" href="#fb" aria-label="Фейсбук">
+            <img class="social__logo social__logo--insta" src="../img/icon-insta.svg" width="16" height="16" alt="Логотип фейсбука">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#insta" aria-label="Инстаграм"></a>
+          <a class="social__link" href="#insta" aria-label="Инстаграм">
+            <img class="social__logo social__logo--fb" src="../img/icon-fb.svg" width="10" height="19" alt="Логотип инстаграма">
+          </a>
         </li>
       </ul>
-      <p class="page-footer__academy-name reset-text">
-        <a class="page-footer__academy-link reset-text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">HTML Academy</a>
-      </p>
-      <div class="page-footer__academy-logo-wrapper">
-        <a class="page-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">
-          <img class="page-footer__academy-logo" src="#" width="50" height="50" alt="Логотип HTML academy">
-        </a>
-      </div>
+      <ul class="page-footer__academy reset-list">
+        <li>
+          <p class="page-footer__academy-name reset-text">
+            <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">HTML Academy</a>
+          </p>
+        </li>
+        <li>
+          <a class="page-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">
+            <img class="page-footer__academy-logo" src="../img/htmlacademy.svg" width="40" height="51" alt="Логотип HTML academy">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

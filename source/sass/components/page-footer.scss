@@ -1,16 +1,70 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+
   background-color: #f2f2f2;
-  width: 280px;
   min-height: 176px;
 
-  padding: 0 20px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  outline: 2px solid brown;
+  outline: 2px solid blue;
+}
+
+.page-footer__logo-footer {
+  padding: 33px 75px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.page-footer__academy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 9px 0;
+
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.page-footer__academy-link {
+  color: #444444;
 }
 
 .page-footer__academy-link {
   color: #444444;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    min-height: 150px;
+  }
+
+  .page-footer__logo-footer {
+    width: 250px;
+
+    padding: 33px 0;
+    border-bottom: 0;
+  }
+
+  .page-footer__academy {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer {
+    padding: 0 110px;
+  }
 }

@@ -1,7 +1,28 @@
 .page-header {
-  width: 280px;
+  width: auto;
+  margin: auto;
+  padding: 0 20px;
+
   min-height: 65px;
 
-  padding: 0 20px;
   outline: 2px solid dodgerblue;
+}
+
+.page-header__logo-image {
+  margin-top: 9px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-header {
+    padding: 0 110px;
+  }
 }

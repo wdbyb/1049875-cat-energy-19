@@ -1,19 +1,31 @@
 .catalog-additional {
-  width: 280px;
   min-height: 925px;
 
-  padding: 0 20px;
+  margin-bottom: 40px;
+
+  padding: 0;
   outline: 2px solid midnightblue;
 }
 
 .catalog-additional__main-title {
+  padding: 28px 0;
+
+  margin-bottom: 5px;
+
   font-size: 24px;
   line-height: 24px;
   color: #111111;
   font-weight: 400;
 }
 
+.catalog-additional__item {
+  min-height: 111px;
+}
+
 .catalog-additional__title {
+  margin-top: 18px;
+  margin-bottom: 10px;
+
   font-size: 16px;
   line-height: 16px;
   color: #222222;
@@ -21,7 +33,24 @@
   text-transform: uppercase;
 }
 
+.catalog-additional__info {
+  display: block;
+}
+
+.catalog-additional__row {
+  display: flex;
+  justify-content: space-between;
+
+  width: 280px;
+
+  margin-bottom: 12px;
+
+  font-family: "Arial", sans-serif;
+}
+
 .catalog-additional__col-name {
+  margin-left: -4px;
+
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -41,4 +70,77 @@
   line-height: 20px;
   color: #ffffff;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .catalog-additional {
+    min-height: 560px;
+  }
+
+  .catalog-additional__main-title {
+    margin-left: 38px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .catalog-additional__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-additional__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: 75px;
+    padding: 28px 36px;
+
+    margin-top: -1px;
+
+    border: 1px solid #d2d2d2;
+  }
+
+  .catalog-additional__title {
+    width: 200px;
+
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .catalog-additional__info {
+    width: 250px;
+  }
+
+  .catalog-additional__link {
+    width: 100%;
+  }
+
+  .catalog-additional__row {
+    width: 250px;
+  }
+
+  .catalog-additional__col-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog-additional__col-value {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .catalog-additional__item {
+    min-height: 25px;
+  }
+
+  .catalog-additional__link {
+    width: 245px;
+    padding: 0;
+  }
 }

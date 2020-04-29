@@ -1,14 +1,13 @@
 .intro {
-  width: 280px;
-  min-height: 50px;
+  min-height: 105px;
 
   padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 30px;
   outline: 2px solid orange;
 }
 
 .intro__title {
+  padding: 15px 0;
+
   font-size: 36px;
   line-height: 60px;
   color: #111111;
@@ -21,4 +20,38 @@
   color: #111111;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    padding: 0 30px;
+
+    min-height: 135px;
+  }
+
+  .intro__title {
+    padding: 25px 0;
+
+    font-size: 60px;
+  }
+
+  .intro__description {
+    width: 330px;
+
+    margin-left: 40px;
+    margin-bottom: 60px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro {
+    padding: 0 110px;
+  }
+
+  .intro__description {
+    margin: 0;
+  }
 }

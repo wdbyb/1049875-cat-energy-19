@@ -2,19 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Интернет магазин &laquo;Кэт энерджи&raquo;</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/image/50x50" width="50" height="50" alt="Логотип компании">
-        </a>
-      </div>
-      <div class="page-header__company-wrapper">
-        <img class="page-header__company-name" src="#" width="200" height="50" alt="Название компании">
-      </div>
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="38" alt="Логотип компании">
+      </a>
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -40,7 +36,7 @@
         <h2 class="top-bar__title reset-text">Функциональное питание для котов</h2>
         <p class="top-bar__description reset-text">Занялся собой? Займись котом!</p>
         <div class="top-bar__image-wrapper">
-          <img class="top-bar__image" src="#" width="50" height="50" alt="Коробочка корма">
+          <img class="top-bar__image" src="../img/index-can-mobile@1x.png" width="280" height="271" alt="Коробочка корма">
         </div>
         <a class="top-bar__link reset-text button" href="#">Подобрать программу</a>
       </section>
@@ -48,13 +44,13 @@
       <section class="category">
         <h2 class="visually-hidden">Программы питания для кота</h2>
         <ul class="category__list reset-list">
-          <li class="category__item">
-            <h3 class="category__title category__title--loss reset-text">Похудение</h3>
+          <li class="category__item category__item--loss">
+            <h3 class="category__title reset-text">Похудение</h3>
             <p class="category__description reset-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="category__link reset-text" href="#" aria-label="Ссылка на каталог slim">Каталог slim</a>
           </li>
-          <li class="category__item category__item">
-            <h3 class="category__title category__title--gain reset-text">Набор массы</h3>
+          <li class="category__item category__item--gain">
+            <h3 class="category__title reset-text">Набор массы</h3>
             <p class="category__description reset-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="category__link reset-text" href="#" aria-label="Ссылка на каталог pro">Каталог pro</a>
           </li>
@@ -70,7 +66,7 @@
           <li class="advantage__item advantage__item--powder">
             <p class="advantage__description reset-text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="advantage__item advantage__item--ingestion">
+          <li class="advantage__item advantage__item--dining">
             <p class="advantage__description reset-text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantage__item advantage__item--time">
@@ -80,59 +76,75 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title reset-text">Живой пример</h2>
-        <p class="example__description reset-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <ul class="example__list reset-list">
-          <li class="example__item">
-            5 кг снижение веса
-          </li>
-          <li class="example__item">
-            60 дней затрачено времени
-          </li>
-        </ul>
-        <p class="example__price">Затраты на питание: 15 000 руб.</p>
-        <div>
-          <img class="example__image" src="#" width="50" height="50" alt="До и после">
+        <div class="example__text">
+          <h2 class="example__title reset-text">Живой пример</h2>
+          <p class="example__description reset-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__list-price-wrapper">
+            <ul class="example__list reset-list">
+              <li class="example__item">
+                5 кг <span class="example__item-low">снижение веса</span>
+              </li>
+              <li class="example__item">
+                60 дней <span class="example__item-low">затрачено времени</span>
+              </li>
+            </ul>
+            <p class="example__price">Затраты на питание: 15 000 руб.</p>
+          </div>
         </div>
-        <div class="example__scale">
-          Было
-          <input type="range">
-          Стало
+        <div>
+          <img class="example__image" src="../img/before-mobile@1x.png" width="320" height="240" alt="До и после">
+          <div class="example__scale">
+            Было
+            <input type="range">
+            Стало
+          </div>
         </div>
       </section>
 
       <section class="contact">
-        <h2 class="contact__title reset-text">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contact__top-block">
+          <h2 class="contact__title reset-text">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <address class="contact__address">ул. Большая<br> Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
         <div class="contact__image-wrapper">
-          <img class="contact__image" src="#" width="50" height="50" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="contact__image" src="../img/bg-map-mobile@1x.png" width="320" height="400" alt="Наш адресс: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__company-wrapper">
-        <img class="page-footer__company-name" src="#" alt="Название компании">
+      <div class="page-footer__logo-footer-wrapper">
+        <img class="page-footer__logo-footer" src="../img/logo-footer.svg" width="128" height="24" alt="Название компании">
       </div>
 
       <ul class="page-footer__social social reset-list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#vk" aria-label="Вконтакте"></a>
+          <a class="social__link" href="#vk" aria-label="Вконтакте">
+            <img class="social__logo social__logo--vk" src="../img/icon-vk.svg" width="22" height="12" alt="Логотип вконтакте">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--insta" href="#fb" aria-label="Фейсбук"></a>
+          <a class="social__link" href="#fb" aria-label="Фейсбук">
+            <img class="social__logo social__logo--insta" src="../img/icon-insta.svg" width="16" height="16" alt="Логотип фейсбука">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--fb" href="#insta" aria-label="Инстаграм"></a>
+          <a class="social__link" href="#insta" aria-label="Инстаграм">
+            <img class="social__logo social__logo--fb" src="../img/icon-fb.svg" width="10" height="19" alt="Логотип инстаграма">
+          </a>
         </li>
       </ul>
-      <p class="page-footer__academy-name reset-text">
-        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">HTML Academy</a>
-      </p>
-      <div class="page-footer__academy-logo-wrapper">
-        <a class="page-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">
-          <img class="page-footer__academy-logo" src="#" width="50" height="50" alt="Логотип HTML academy">
-        </a>
-      </div>
+      <ul class="page-footer__academy reset-list">
+        <li>
+          <p class="page-footer__academy-name reset-text">
+            <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">HTML Academy</a>
+          </p>
+        </li>
+        <li>
+          <a class="page-footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на лендинг интенсива HTML и CSS уровень 2">
+            <img class="page-footer__academy-logo" src="../img/htmlacademy.svg" width="40" height="51" alt="Логотип HTML academy">
+          </a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
