@@ -1,11 +1,9 @@
 .example {
   background-color: #f2f2f2;
   min-height: 650px;
-  padding: 0 20px;
+  padding: 0;
   padding-top: 18px;
   padding-bottom: 37px;
-
-  outline: 2px solid tomato;
 }
 
 .example__title {
@@ -18,8 +16,6 @@
 }
 
 .example__description {
-  width: auto;
-
   padding: 0;
 
   margin: 0;
@@ -103,8 +99,6 @@
   .example {
     background-color: #ffffff;
     min-height: 1080px;
-
-    padding: 0 30px;
   }
 
   .example__title {
@@ -113,9 +107,12 @@
     font-size: 60px;
   }
 
-  .example__description {
-    width: 99%;
+  .example__image {
+    width: 690px;
+    height: 517px;
+  }
 
+  .example__description {
     font-size: 16px;
     line-height: 24px;
   }

@@ -1,9 +1,5 @@
 .category {
-  width: auto;
   min-height: 540px;
-
-  padding: 0 20px;
-  outline: 2px solid darkblue;
 }
 
 .category__item {
@@ -11,8 +7,6 @@
 
   background-color: #f2f2f2;
   padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   margin-bottom: 20px;
 
@@ -88,7 +82,7 @@
 .category__title {
   margin: 0;
   margin-bottom: 28px;
-  margin-left: 71px;
+  margin-left: 60px;
 
   color: #111111;
   font-size: 24px;

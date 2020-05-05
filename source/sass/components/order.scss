@@ -1,8 +1,5 @@
 .order {
   min-height: 1200px;
-
-  padding: 0 20px;
-  outline: 2px solid violet;
 }
 
 .order__item {
@@ -98,7 +95,7 @@
 
 @media (min-width: 768px) {
   .order {
-    padding: 0 70px;
+
   }
 
   .order .submit {
@@ -167,10 +164,6 @@
 @media (min-width: 1440px) {
   .order {
     min-height: 1200px;
-
-    padding: 0 110px;
-
-    outline: 2px solid violet;
   }
 
   .order__form {

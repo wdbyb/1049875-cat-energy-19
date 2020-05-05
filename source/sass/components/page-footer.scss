@@ -1,15 +1,12 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-
-  width: auto;
-  margin: auto;
-  padding: 0 20px;
+  width: 100%;
 
   background-color: #f2f2f2;
-  min-height: 176px;
+}
 
-  outline: 2px solid blue;
+.page-footer .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .page-footer__logo-footer {
@@ -41,14 +38,14 @@
 
 @media (min-width: 768px) {
   .page-footer {
+    min-height: 150px;
+  }
+
+  .page-footer .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
-    padding: 0 30px;
-
-    min-height: 150px;
   }
 
   .page-footer__logo-footer {
@@ -60,11 +57,5 @@
 
   .page-footer__academy {
     width: 180px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .page-footer {
-    padding: 0 110px;
   }
 }

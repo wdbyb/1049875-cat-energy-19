@@ -1,8 +1,5 @@
 .intro {
   min-height: 105px;
-
-  padding: 0 20px;
-  outline: 2px solid orange;
 }
 
 .intro__title {
@@ -24,8 +21,6 @@
 
 @media (min-width: 768px) {
   .intro {
-    padding: 0 30px;
-
     min-height: 135px;
   }
 
@@ -48,7 +43,7 @@
 
 @media (min-width: 1440px) {
   .intro {
-    padding: 0 110px;
+
   }
 
   .intro__description {

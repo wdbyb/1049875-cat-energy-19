@@ -1,13 +1,21 @@
 .top-bar {
   position: relative;
 
-  width: auto;
   min-height: 440px;
 
   padding: 0;
   padding-top: 25px;
+}
 
-  outline: 2px solid blue;
+.top-bar__title {
+  position: relative;
+
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 400;
+
 
   &::before {
     content: "";
@@ -25,14 +33,6 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-}
-
-.top-bar__title {
-  color: #ffffff;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-  font-weight: 400;
 }
 
 .top-bar__description {
@@ -69,10 +69,6 @@
 
     display: flex;
     flex-direction: column;
-
-    &::before {
-      display: none;
-    }
   }
 
   .top-bar__link {
@@ -91,6 +87,10 @@
     text-align: left;
 
     z-index: 1;
+
+    &::before {
+      display: none;
+    }
   }
 
   .top-bar__description {
@@ -109,6 +109,9 @@
   .top-bar__image {
     position: relative;
     margin-top: -50px;
+
+    width: 709px;
+    height: 609px;
 
     z-index: -1;
   }
