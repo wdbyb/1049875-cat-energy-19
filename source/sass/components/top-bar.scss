@@ -4,11 +4,12 @@
   min-height: 440px;
 
   padding: 0;
-  padding-top: 25px;
 }
 
 .top-bar__title {
   position: relative;
+
+  margin-top: 25px;
 
   color: #ffffff;
   font-size: 36px;
@@ -26,7 +27,7 @@
     width: 320px;
     height: 305px;
 
-    top: 0;
+    top: -25px;
     right: 0;
 
     background-image: url("../img/index-background-mobile@1x.jpg");
@@ -36,7 +37,7 @@
 }
 
 .top-bar__description {
-  margin-top: 25px;
+  margin-top: 27px;
 
   color: #ffffff;
   font-size: 14px;
@@ -48,13 +49,15 @@
 
 .top-bar__image {
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 .top-bar__link {
   width: auto;
 
-  margin-top: 1px;
   margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   color: #ffffff;
   font-size: 14px;
@@ -72,14 +75,22 @@
   }
 
   .top-bar__link {
-    position: relative;
-    margin-top: -150px;
+    width: 245px;
+
+    padding: 16px 0;
+
+    margin-top: 48px;
+    margin-left: 120px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .top-bar__title {
     width: 427px;
 
-    margin-left: 90px;
+    margin-left: 117px;
+    margin-top: 40px;
 
     color: #000000;
     font-size: 60px;
@@ -96,7 +107,8 @@
   .top-bar__description {
     width: 427px;
 
-    margin-left: 90px;
+    margin-left: 117px;
+    margin-top: 42px;
 
     color: #000000;
     font-size: 20px;
@@ -107,8 +119,9 @@
   }
 
   .top-bar__image {
-    position: relative;
-    margin-top: -50px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
 
     width: 709px;
     height: 609px;

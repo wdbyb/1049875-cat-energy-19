@@ -8,6 +8,7 @@
 
 .example__title {
   margin-bottom: 23px;
+  margin-left: 20px;
 
   color: #111111;
   font-size: 36px;
@@ -20,6 +21,8 @@
 
   margin: 0;
   margin-bottom: 24px;
+  margin-left: 20px;
+  margin-right: 30px;
 
 
   color: #444444;
@@ -31,6 +34,8 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+
+  padding: 0 20px;
 }
 
 .example__item {

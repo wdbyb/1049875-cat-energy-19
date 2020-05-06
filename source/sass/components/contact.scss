@@ -1,13 +1,19 @@
 .contact {
-  min-height: 430px;
+  position: relative;
+
+  min-height: 200px;
 }
 
 .contact__top-block {
+  position: absolute;
+
   display: flex;
   justify-content: space-between;
 
   padding-top: 27px;
   padding-bottom: 27px;
+
+  background-color: white;
 }
 
 .contact--catalog-form {
@@ -15,6 +21,8 @@
 }
 
 .contact__title {
+  margin-left: 20px;
+
   color: #111111;
   font-size: 16px;
   line-height: 20px;
@@ -23,6 +31,8 @@
 }
 
 .contact__address {
+  margin-left: 15px;
+
   color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -31,6 +41,7 @@
 }
 
 .contact__image {
+  margin-top: 74px;
 }
 
 @media (min-width: 768px) {

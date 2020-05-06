@@ -1,20 +1,23 @@
 .page-header {
   width: 100%;
-
-  min-height: 65px;
 }
 
 .page-header__logo-image {
   margin-top: 9px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
   .page-header .container {
     display: flex;
-    justify-content: space-between;
   }
 
   .page-header__logo-image {
+    margin-top: 24px;
+    margin-left: 30px;
+    margin-right: 100px;
+
     width: 173px;
     height: 58px;
   }
