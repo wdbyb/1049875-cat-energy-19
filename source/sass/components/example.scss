@@ -102,41 +102,60 @@
 
 @media (min-width: 768px) {
   .example {
+    padding: 0;
+
     background-color: #ffffff;
-    min-height: 1080px;
+    min-height: 0;
   }
 
   .example__title {
-    margin-bottom: 46px;
+    margin-bottom: 64px;
+    margin-left: 30px;
 
     font-size: 60px;
   }
 
   .example__image {
+    margin-top: 85px;
+    margin-left: 45px;
+
     width: 690px;
     height: 517px;
   }
 
+  .example__image-area {
+    padding-bottom: 65px;
+  }
+
   .example__description {
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
     font-size: 16px;
     line-height: 24px;
   }
 
   .example__list-price-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .example__list {
-    width: 60%;
+    width: 420px;
+    justify-content: flex-start;
+
+    padding: 0 30px;
   }
 
   .example__item {
     width: 162px;
 
-    padding: 20px 20px;
-    padding-bottom: 25px;
+    margin-right: 40px;
+
+    padding: 15px 0;
+    padding-bottom: 20px;
 
     font-size: 30px;
     line-height: 37px;
@@ -144,9 +163,9 @@
 
   .example__item-low {
     bottom: -6px;
-    left: 30px;
+    left: 12px;
 
-    width: 142px;
+    width: 135px;
 
     font-size: 14px;
     line-height: 14px;
@@ -158,11 +177,12 @@
     width: 180px;
 
     margin: 0;
+    margin-left: 75px;
 
     color: #111111;
     text-align: right;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 28px;
     text-transform: uppercase;
   }
 }
@@ -175,15 +195,57 @@
     min-height: 625px;
   }
 
+  .example .container {
+    display: flex;
+  }
+
+  .example__text {
+    width: 680px;
+
+    margin-top: 70px;
+  }
+
+  .example__image {
+    margin-top: 0;
+    margin-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  .example__image-area {
+    width: 680px;
+  }
+
   .example__title {
-    margin-bottom: 90px;
+    margin-bottom: 148px;
+    margin-left: 110px;
   }
 
   .example__description {
     width: 435px;
+
+    margin-left: 110px;
+    margin-bottom: 66px;
+  }
+
+  .example__list-price-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__list {
+    padding: 0 110px;
+
+    margin-bottom: 55px;
   }
 
   .example__price {
-    width: 300px;
+    width: 350px;
+
+    margin-left: 88px;
+  }
+
+  .example__price-number {
+    margin-left: 59px;
   }
 }

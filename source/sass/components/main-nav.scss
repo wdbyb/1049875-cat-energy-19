@@ -69,3 +69,14 @@
     display: none;
   }
 }
+
+@media (min-width: 1440px) {
+  .main-nav {
+    margin-top: 54px;
+    margin-left: 445px;
+  }
+
+  .site-nav__link {
+    line-height: 25px;
+  }
+}

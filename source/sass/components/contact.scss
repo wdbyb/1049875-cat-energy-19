@@ -10,6 +10,8 @@
   display: flex;
   justify-content: space-between;
 
+  width: 320px;
+
   padding-top: 27px;
   padding-bottom: 27px;
 
@@ -50,19 +52,27 @@
   }
 
   .contact__top-block {
+    position: relative;
+
+    width: auto;
+
     justify-content: space-between;
 
-    padding: 60px 30px;
+    padding: 65px 70px;
   }
 
   .contact__title {
     width: 160px;
+
+    margin-left: 0;
 
     font-size: 20px;
     line-height: 25px;
   }
 
   .contact__image {
+    margin: 0;
+
     width: 100%;
     height: 400px;
   }
@@ -77,6 +87,29 @@
 }
 
 @media (min-width: 1440px) {
+  .contact {
+    min-height: 0;
+  }
+
+  .contact__top-block {
+    position: absolute;
+
+    justify-content: flex-start;
+
+    width: 420px;
+
+    padding-left: 75px;
+
+    top: 100px;
+    left: 110px;
+  }
+
+  .contact__address {
+    margin-left: 90px;
+
+    text-align: left;
+  }
+
   .contact__image {
 
   }

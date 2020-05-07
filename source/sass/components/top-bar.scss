@@ -132,7 +132,9 @@
 
 @media (min-width: 1440px) {
   .top-bar {
-    min-height: 850px;
+    min-height: 0;
+
+    margin-bottom: 170px;
 
     display: flex;
     flex-direction: column;
@@ -144,12 +146,12 @@
 
   .top-bar__link {
     width: 245px;
-    min-height: 52px;
+    min-height: 0;
 
     position: relative;
 
-    margin-top: 0;
-    margin-left: 90px;
+    margin-top: 50px;
+    margin-left: 190px;
 
     font-size: 20px;
     line-height: 20px;
@@ -158,7 +160,8 @@
   .top-bar__title {
     width: 427px;
 
-    margin-left: 90px;
+    margin-left: 190px;
+    margin-top: 90px;
 
     color: #000000;
     font-size: 60px;
@@ -171,7 +174,7 @@
   .top-bar__description {
     width: 427px;
 
-    margin-left: 90px;
+    margin-left: 190px;
 
     color: #000000;
     font-size: 20px;
@@ -182,10 +185,13 @@
   }
 
   .top-bar__image {
-    position: relative;
-    margin-top: -50px;
+    position: absolute;
 
-    left: 700px;
+    width: 552px;
+    height: 499px;
+
+    left: 530px;
+    top: -10px;
 
     z-index: -1;
   }
