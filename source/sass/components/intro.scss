@@ -1,5 +1,5 @@
 .intro {
-  min-height: 105px;
+
 }
 
 .intro__title {
@@ -23,11 +23,13 @@
 
 @media (min-width: 768px) {
   .intro {
-    min-height: 135px;
+    margin-bottom: 40px;
   }
 
   .intro__title {
-    padding: 25px 0;
+    padding: 40px 0;
+
+    margin-left: 30px;
 
     font-size: 60px;
   }
