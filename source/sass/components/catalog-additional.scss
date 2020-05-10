@@ -9,6 +9,7 @@
 
   margin-bottom: 20px;
   margin-left: 20px;
+  margin-right: 20px;
 
   font-size: 24px;
   line-height: 24px;
@@ -45,12 +46,15 @@
   display: block;
 }
 
+.catalog-additional__info tbody {
+  display: block;
+}
+
 .catalog-additional__link {
 }
 
 .catalog-additional__row {
   display: flex;
-  justify-content: space-between;
 
   width: 280px;
 
@@ -60,7 +64,6 @@
 }
 
 .catalog-additional__col-name {
-  margin-left: -4px;
 
   font-size: 14px;
   line-height: 14px;
