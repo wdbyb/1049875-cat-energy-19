@@ -1,16 +1,21 @@
 .contact {
-  min-height: 430px;
+  position: relative;
 
-  outline: 2px solid crimson;
+  min-height: 200px;
 }
 
 .contact__top-block {
+  position: absolute;
+
   display: flex;
   justify-content: space-between;
 
-  padding: 0 20px;
+  width: 320px;
+
   padding-top: 27px;
   padding-bottom: 27px;
+
+  background-color: white;
 }
 
 .contact--catalog-form {
@@ -18,7 +23,7 @@
 }
 
 .contact__title {
-  width: 140px;
+  margin-left: 20px;
 
   color: #111111;
   font-size: 16px;
@@ -28,7 +33,7 @@
 }
 
 .contact__address {
-  width: 140px;
+  margin-left: 14px;
 
   color: #444444;
   font-family: "Arial", sans-serif;
@@ -38,6 +43,7 @@
 }
 
 .contact__image {
+  margin-top: 74px;
 }
 
 @media (min-width: 768px) {
@@ -46,16 +52,29 @@
   }
 
   .contact__top-block {
+    position: relative;
+
+    width: auto;
+
     justify-content: space-between;
 
-    padding: 60px 30px;
+    padding: 65px 70px;
   }
 
   .contact__title {
     width: 160px;
 
+    margin-left: 0;
+
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .contact__image {
+    margin: 0;
+
+    width: 100%;
+    height: 400px;
   }
 
   .contact__address {
@@ -64,5 +83,34 @@
     text-align: right;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact {
+    min-height: 0;
+  }
+
+  .contact__top-block {
+    position: absolute;
+
+    justify-content: flex-start;
+
+    width: 420px;
+
+    padding-left: 75px;
+
+    top: 100px;
+    left: 110px;
+  }
+
+  .contact__address {
+    margin-left: 90px;
+
+    text-align: left;
+  }
+
+  .contact__image {
+
   }
 }

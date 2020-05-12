@@ -1,16 +1,9 @@
 .order {
-  min-height: 1200px;
-
-  padding: 0 20px;
-  outline: 2px solid violet;
 }
 
 .order__item {
   display: flex;
   align-items: center;
-
-  margin-top: 15px;
-  margin-bottom: 15px;
 
   font-size: 16px;
   line-height: 18px;
@@ -18,16 +11,80 @@
   text-transform: uppercase;
 }
 
+.order__fieldset {
+  padding: 0 20px;
+}
+
+.order__fieldset--comment {
+
+}
+
+.order__fieldset--comment .order__title {
+  padding: 16px 0;
+  padding-bottom: 34px;
+}
+
+.order__fieldset--radio {
+  padding-top: 27px;
+  padding-bottom: 1px;
+
+  border: 1px solid #ededed;
+}
+
+.order__fieldset--radio .order__item {
+  margin-bottom: 25px;
+}
+
+.order__fieldset--name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.order__fieldset--name .order__item {
+  margin-top: 15px;
+}
+
+.order__fieldset--contact {
+
+}
+
+.order__fieldset--contact .order__title {
+  padding: 26px 0;
+  padding-bottom: 33px;
+}
+
+.order__fieldset--contact .order__item {
+  margin-bottom: 13px;
+}
+
+.order__fieldset--additional {
+
+}
+
+.order__fieldset--additional .order__title {
+  padding: 26px 0;
+  padding-bottom: 41px;
+}
+
+.order__fieldset--additional .order__item {
+  margin-bottom: 24px;
+}
+
 .order__title {
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+}
 
-  padding-top: 25px;
-  padding-bottom: 35px;
+.order__submit {
+  margin-bottom: 31px;
 }
 
 .order__submit-button {
+  width: 280px;
+
+  margin: 0 auto;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -62,8 +119,16 @@
 }
 
 .order__radio-fieldset {
+  padding: 20px;
+  padding-bottom: 0;
+
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
+}
+
+.order__radio-fieldset .order__item {
+  margin-bottom: 25px;
+  margin-top: 6px;
 }
 
 .order__radio-label {
@@ -98,16 +163,79 @@
 
 @media (min-width: 768px) {
   .order {
-    padding: 0 70px;
+
   }
 
-  .order .submit {
+  .order__submit {
     display: flex;
     flex-wrap: wrap;
 
     align-items: center;
 
     padding-bottom: 75px;
+  }
+
+  .order__fieldset {
+    padding: 0 70px;
+  }
+
+  .order__fieldset--name {
+    padding-top: 22px;
+  }
+
+  .order__fieldset--radio {
+    padding-top: 54px;
+    padding-right: 66px;
+    padding-bottom: 49px;
+
+    border: none;
+  }
+
+  .order__fieldset--radio .order__list {
+    padding-top: 14px;
+    padding-bottom: 4px;
+
+    border: 1px solid #ededed;
+  }
+
+  .order__fieldset--radio .order__item {
+    margin-bottom: 32px;
+  }
+
+  .order__fieldset--contact .order__title {
+    padding-bottom: 75px;
+  }
+
+  .order__fieldset--contact .order__item {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  .order__fieldset--comment .order__title {
+    padding-top: 44px;
+    padding-bottom: 76px;
+  }
+
+  .order__comment {
+    height: 175px;
+
+    padding: 13px;
+    padding-left: 18px;
+
+    font-size: 20px;
+  }
+
+  .order__fieldset--additional {
+    margin-bottom: 14px;
+  }
+
+  .order__fieldset--additional .order__title {
+    padding-top: 62px;
+    padding-bottom: 46px;
+  }
+
+  .order__fieldset--additional .order__item {
+    margin-bottom: 32px;
   }
 
   .order__item {
@@ -138,7 +266,6 @@
   .order__list--additional {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .order__list--additional .order__item {
@@ -149,9 +276,20 @@
     margin-left: 20px;
   }
 
+  .order__submit {
+    margin-bottom: 0;
+    padding-bottom: 73px;
+  }
+
   .order__submit-button {
     width: 284px;
-    min-height: 52px;
+
+    margin-left: 70px;
+    margin-right: 21px;
+
+    padding: 14px;
+
+    font-size: 20px;
   }
 
   .order__must-info {
@@ -167,10 +305,6 @@
 @media (min-width: 1440px) {
   .order {
     min-height: 1200px;
-
-    padding: 0 110px;
-
-    outline: 2px solid violet;
   }
 
   .order__form {
@@ -208,31 +342,52 @@
     border: 1px solid #e6e6e6;
   }
 
-  .contacts-info {
-    width: 100%;
-  }
-
-  .contacts-info .order__list {
+  .order__fieldset--contact .order__list {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
   }
 
-  .comment-fieldset {
+  .order__comment {
     width: 100%;
   }
 
-  .order__radio-fieldset {
-    height: 186px;
+  .order__fieldset--radio {
+    padding: 0;
+    padding-top: 27px;
 
-    padding: 0 30px;
-
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 20px;
   }
 
-  .order__radio-fieldset .order__item {
+  .order__fieldset--radio .order__list {
+    padding: 0 30px;
+  }
+
+  .order__fieldset--radio .order__item {
+    margin-top: 33px;
+    margin-left: 22px;
+  }
+
+  .order__fieldset--name {
+    padding-right: 30px;
+    padding-left: 110px;
+    padding-top: 33px;
+  }
+
+  .order__fieldset--contact {
+    padding: 0 110px;
+  }
+
+  .order__fieldset--contact .order__title {
+    padding-top: 57px;
+  }
+
+  .order__fieldset--contact .order__item {
+    margin-right: 78px;
+  }
+
+  .order__fieldset--radio .order__item {
     width: 508px;
   }
 
@@ -240,21 +395,57 @@
     width: 245px;
   }
 
+  .order__fieldset--comment {
+    padding: 0 110px;
+  }
+
+  .order__fieldset--comment .order__title {
+    padding-top: 48px;
+  }
+
   .order__comment {
+    width: 1220px;
+
     border: 1px solid #e6e6e6;
   }
 
+  .order__fieldset--additional {
+    padding: 0 110px;
+  }
+
+  .order__fieldset--additional .order__list {
+    justify-content: flex-start;
+  }
+
+  .order__fieldset--additional .order__title {
+    padding-top: 65px;
+  }
+
+  .order__fieldset--additional .order__item {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   .order__checkbox-label {
-    margin-left: 33px;
+    margin-left: 46px;
   }
 
   .order__submit-button {
     width: 570px;
 
-    margin-top: 20px;
+    padding: 15px 0;
+
+    margin-top: 25px;
+    margin-left: 110px;
+    margin-right: 0;
+
+    font-size: 20px;
   }
 
   .order__must-info {
-    margin-left: 80px;
+    margin-left: 71px;
   }
 }

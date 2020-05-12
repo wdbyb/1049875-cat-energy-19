@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
 
-  padding: 20px 0;
+  padding: 19px 55px;
+  padding-right: 63px;
 
   border-bottom: 1px solid #d9d9d9;
 }
@@ -13,8 +14,33 @@
 
 @media (min-width: 768px) {
   .social {
+    align-items: center;
+
     width: 180px;
 
+    padding: 55px 30px;
+
     border-bottom: 0;
+  }
+
+  .social__logo--fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .social__logo--vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__logo--insta {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .social {
+    padding: 0;
   }
 }
