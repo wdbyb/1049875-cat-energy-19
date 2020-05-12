@@ -48,7 +48,7 @@
       <section class="order">
         <div class="container">
           <form class="order__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="order__fieldset reset-fieldset">
+            <fieldset class="order__fieldset order__fieldset--name reset-fieldset">
               <ul class="order__list reset-list">
                 <li class="order__item">
                   <input class="order__name" type="text" name="name" id="name" value="" required placeholder="БАРСИК">
@@ -65,7 +65,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="order__radio-fieldset reset-fieldset">
+            <fieldset class="order__fieldset order__fieldset--radio reset-fieldset">
               <ul class="order__list reset-list">
                 <li class="order__item">
                   <input class="order__radio" type="radio" name="categories" id="loss-weight" value="loss-weight">
@@ -82,7 +82,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="order__fieldset contacts-info reset-fieldset">
+            <fieldset class="order__fieldset order__fieldset--contact reset-fieldset">
               <legend class="order__title">Контактные данные (владельца кота)</legend>
               <ul class="order__list reset-list">
                 <li class="order__item">
@@ -96,12 +96,12 @@
               </ul>
             </fieldset>
 
-            <fieldset class="order__fieldset comment-fieldset reset-fieldset">
+            <fieldset class="order__fieldset order__fieldset--comment reset-fieldset">
               <legend class="order__title">Комментарий</legend>
               <textarea class="order__comment" name="comment" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
             </fieldset>
 
-            <fieldset class="order__fieldset reset-fieldset">
+            <fieldset class="order__fieldset order__fieldset--additional reset-fieldset">
               <legend class="order__title">Дополнительно</legend>
               <ul class="order__list order__list--additional reset-list">
                 <li class="order__item">
@@ -123,7 +123,7 @@
               </ul>
             </fieldset>
 
-            <div class="submit">
+            <div class="order__submit">
               <button class="order__submit-button button" type="submit">Отправить заявку</button>
               <p class="order__must-info reset-text"><sup>*</sup> — Обязательные поля</p>
             </div>

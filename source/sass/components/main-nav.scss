@@ -72,11 +72,22 @@
 
 @media (min-width: 1440px) {
   .main-nav {
+    width: 484px;
+
     margin-top: 54px;
-    margin-left: 445px;
+    margin-left: 440px;
+  }
+
+  .site-nav {
+    width: 524px;
+  }
+
+  .site-nav__item {
+    margin-right: 30px;
   }
 
   .site-nav__link {
+    font-size: 20px;
     line-height: 25px;
   }
 }

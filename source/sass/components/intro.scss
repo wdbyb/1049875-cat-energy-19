@@ -6,6 +6,7 @@
   padding: 15px 0;
 
   margin-left: 20px;
+  margin-bottom: 12px;
 
   font-size: 36px;
   line-height: 60px;
@@ -14,6 +15,10 @@
 }
 
 .intro__description {
+  width: 230px;
+
+  margin-left: 20px;
+
   font-size: 14px;
   line-height: 18px;
   color: #111111;
@@ -23,11 +28,11 @@
 
 @media (min-width: 768px) {
   .intro {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .intro__title {
-    padding: 40px 0;
+    padding: 42px 0;
 
     margin-left: 30px;
 
@@ -37,8 +42,8 @@
   .intro__description {
     width: 330px;
 
-    margin-left: 40px;
-    margin-bottom: 60px;
+    margin-left: 70px;
+    margin-bottom: 30px;
 
     font-size: 20px;
     line-height: 30px;
@@ -47,10 +52,18 @@
 
 @media (min-width: 1440px) {
   .intro {
-
+    margin-bottom: 18px;
   }
 
   .intro__description {
     margin: 0;
+    margin-left: 110px;
+  }
+
+  .intro__title {
+    padding: 56px 0;
+
+    margin-left: 110px;
+    margin-bottom: 0;
   }
 }
