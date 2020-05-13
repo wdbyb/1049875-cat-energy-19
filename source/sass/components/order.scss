@@ -1,6 +1,3 @@
-.order {
-}
-
 .order__item {
   display: flex;
   align-items: center;
@@ -13,10 +10,6 @@
 
 .order__fieldset {
   padding: 0 20px;
-}
-
-.order__fieldset--comment {
-
 }
 
 .order__fieldset--comment .order__title {
@@ -44,10 +37,6 @@
   margin-top: 15px;
 }
 
-.order__fieldset--contact {
-
-}
-
 .order__fieldset--contact .order__title {
   padding: 26px 0;
   padding-bottom: 33px;
@@ -55,10 +44,6 @@
 
 .order__fieldset--contact .order__item {
   margin-bottom: 13px;
-}
-
-.order__fieldset--additional {
-
 }
 
 .order__fieldset--additional .order__title {
@@ -84,6 +69,7 @@
   width: 280px;
 
   margin: 0 auto;
+  margin-top: 20px;
 
   font-size: 16px;
   line-height: 20px;
@@ -92,10 +78,14 @@
   background-color: #68b738;
   border: none;
 
-  font: inherit;
+  font-family: inherit;
 }
 
 .order__must-info {
+  margin-top: 23px;
+
+  text-align: center;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #444444;
@@ -150,29 +140,16 @@
   margin-left: 33px;
 }
 
-.order__submit-button {
-  margin-top: 20px;
-}
-
-.order__must-info {
-  margin-top: 23px;
-
-  text-align: center;
-  font-family: "Arial", sans-serif;
-}
-
 @media (min-width: 768px) {
-  .order {
-
-  }
-
   .order__submit {
     display: flex;
     flex-wrap: wrap;
 
-    align-items: center;
+    margin-bottom: 0;
 
-    padding-bottom: 75px;
+    padding-bottom: 73px;
+
+    align-items: center;
   }
 
   .order__fieldset {
@@ -276,11 +253,6 @@
     margin-left: 20px;
   }
 
-  .order__submit {
-    margin-bottom: 0;
-    padding-bottom: 73px;
-  }
-
   .order__submit-button {
     width: 284px;
 
@@ -320,14 +292,22 @@
   }
 
   .order__submit-button {
-    font-size: 16px;
+    width: 570px;
+
+    padding: 15px 0;
+
+    margin-top: 25px;
+    margin-left: 110px;
+    margin-right: 0;
+
+    font-size: 20px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: #68b738;
-    border: none;
+    font-family: inherit;
 
-    font: inherit;
+    border: none;
   }
 
   .order__name-label,
@@ -349,7 +329,9 @@
   }
 
   .order__comment {
-    width: 100%;
+    width: 1220px;
+
+    border: 1px solid #e6e6e6;
   }
 
   .order__fieldset--radio {
@@ -365,6 +347,8 @@
   }
 
   .order__fieldset--radio .order__item {
+    width: 508px;
+
     margin-top: 33px;
     margin-left: 22px;
   }
@@ -387,10 +371,6 @@
     margin-right: 78px;
   }
 
-  .order__fieldset--radio .order__item {
-    width: 508px;
-  }
-
   .order__list--additional .order__item {
     width: 245px;
   }
@@ -401,12 +381,6 @@
 
   .order__fieldset--comment .order__title {
     padding-top: 48px;
-  }
-
-  .order__comment {
-    width: 1220px;
-
-    border: 1px solid #e6e6e6;
   }
 
   .order__fieldset--additional {
@@ -431,18 +405,6 @@
 
   .order__checkbox-label {
     margin-left: 46px;
-  }
-
-  .order__submit-button {
-    width: 570px;
-
-    padding: 15px 0;
-
-    margin-top: 25px;
-    margin-left: 110px;
-    margin-right: 0;
-
-    font-size: 20px;
   }
 
   .order__must-info {
