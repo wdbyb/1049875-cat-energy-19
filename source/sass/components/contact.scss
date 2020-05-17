@@ -10,7 +10,6 @@
   position: absolute;
 
   display: flex;
-  justify-content: space-between;
 
   width: 320px;
 
@@ -58,8 +57,6 @@
 
     width: auto;
 
-    justify-content: space-between;
-
     padding: 65px 70px;
   }
 
@@ -95,8 +92,6 @@
 
   .contact__top-block {
     position: absolute;
-
-    justify-content: flex-start;
 
     width: 420px;
 
