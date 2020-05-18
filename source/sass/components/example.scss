@@ -87,11 +87,72 @@
 }
 
 .example__scale {
+  position: relative;
+
   text-align: center;
   color: #111111;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example__scale-was,
+.example__scale-will {
+  position: absolute;
+
+  font-size: 16px;
+}
+
+.example__scale-was {
+  top: 4px;
+  left: 64px;
+}
+
+.example__scale-will {
+  top: 4px;
+  right: 59px;
+}
+
+.example__scale-line {
+  position: absolute;
+
+  top: 6px;
+  left: 120px;
+
+  width: 84px;
+  height: 14px;
+
+  background-color: #dcdcdc;
+  border-radius: 7px;
+}
+
+.example__scale-button {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 82px;
+  height: 12px;
+
+  border-radius: 7px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 3px;
+    left: 4px;
+
+    width: 35px;
+    height: 6px;
+
+    border-radius: 7px;
+    background-color: #68b738;
+  }
 }
 
 .example__image {
@@ -114,6 +175,78 @@
     font-size: 60px;
   }
 
+  .example__scale {
+    position: relative;
+
+    text-align: center;
+    color: #111111;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .example__scale-was,
+  .example__scale-will {
+    position: absolute;
+  }
+
+  .example__scale-was {
+    top: -5px;
+    left: 98px;
+
+    font-size: 20px;
+  }
+
+  .example__scale-will {
+    top: -5px;
+    right: 100px;
+
+    font-size: 20px;
+  }
+
+  .example__scale-line {
+    position: absolute;
+
+    top: 3px;
+    left: 170px;
+
+    width: 428px;
+    height: 6px;
+
+    background-color: #dcdcdc;
+    border-radius: 3px;
+  }
+
+  .example__scale-button {
+    position: absolute;
+
+    top: -14px;
+    left: 198px;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      top: 12px;
+      left: 12px;
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+
   .example__image {
     margin-top: 85px;
     margin-left: 45px;
@@ -123,7 +256,7 @@
   }
 
   .example__image-area {
-    padding-bottom: 65px;
+    padding-bottom: 88px;
   }
 
   .example__description {

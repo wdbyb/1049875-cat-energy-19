@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
 
+  position: relative;
+
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -10,6 +12,95 @@
 
 .order__fieldset {
   padding: 0 20px;
+}
+
+.order__checkbox {
+  display: none;
+}
+
+.order__checkbox-label {
+  cursor: pointer;
+
+  margin-left: 46px;
+}
+
+.order__checkbox-label::before {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+  left: 0;
+
+  width: 28px;
+  height: 28px;
+
+  background-color: white;
+  border: 1px solid #cecece;
+}
+
+#sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
+#water:checked ~ .order__checkbox-label[for="water"]::after,
+#milk:checked ~ .order__checkbox-label[for="milk"]::after,
+#vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
+  content: "";
+
+  z-index: 1;
+
+  position: absolute;
+
+  top: 2px;
+  left: 4px;
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("/img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.order__radio {
+  display: none;
+}
+
+.order__radio-label {
+  cursor: pointer;
+
+  margin-left: 45px;
+}
+
+.order__radio-label::before {
+  content: "";
+
+  position: absolute;
+
+  top: -6px;
+  left: -1px;
+
+  width: 28px;
+  height: 28px;
+
+  background-color: white;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+
+#loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
+#gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
+#need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
+  content: "";
+
+  position: absolute;
+
+  top: 3px;
+  left: 9px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #68b738;
+  border-radius: 50%;
 }
 
 .order__fieldset--comment .order__title {
@@ -143,12 +234,52 @@
   margin-right: 14px;
 }
 
+.order__tel-label {
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 15px;
+    left: 246px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.order__email-label {
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 18px;
+    left: 246px;
+
+    width: 17px;
+    height: 13px;
+
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 .order__name,
 .order__tel {
   padding: 12px 12px;
   order: 2;
 
   flex-grow: 1;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
 }
 
 .order__email {
@@ -158,6 +289,10 @@
   order: 2;
 
   flex-grow: 1;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
 }
 
 .order__radio-fieldset {
@@ -173,10 +308,6 @@
   margin-top: 6px;
 }
 
-.order__radio-label {
-  margin-left: 10px;
-}
-
 .order__comment {
   box-sizing: border-box;
 
@@ -186,10 +317,6 @@
   padding: 13px;
 
   resize: none;
-}
-
-.order__checkbox-label {
-  margin-left: 33px;
 }
 
 @media (min-width: 768px) {
@@ -381,12 +508,14 @@
   }
 
   .order__comment {
+    width: 629px;
     height: 175px;
 
     padding: 13px;
     padding-left: 18px;
 
     font-size: 20px;
+    border: 1px solid #e7e7e7;
   }
 
   .order__fieldset--additional {
@@ -445,6 +574,20 @@
   .order__email-label,
   .order__tel-label {
     margin-right: 20px;
+  }
+
+  .order__email-label {
+    &::after {
+      top: 20px;
+      left: 595px;
+    }
+  }
+
+  .order__tel-label {
+    &::after {
+      top: 15px;
+      left: 595px;
+    }
   }
 
   .order__radio-fieldset {
