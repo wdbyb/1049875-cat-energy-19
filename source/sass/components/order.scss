@@ -204,8 +204,101 @@
     align-items: center;
   }
 
+  .order__item {
+    position: relative;
+  }
+
   .order__fieldset {
     padding: 0 70px;
+  }
+
+  .order__checkbox {
+    display: none;
+  }
+
+  .order__checkbox-label {
+    cursor: pointer;
+
+    margin-left: 59px;
+  }
+
+  .order__checkbox-label::before {
+    content: "";
+
+    position: absolute;
+
+    top: -9px;
+    left: 0;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: white;
+    border: 1px solid #cecece;
+  }
+
+  #sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
+  #water:checked ~ .order__checkbox-label[for="water"]::after,
+  #milk:checked ~ .order__checkbox-label[for="milk"]::after,
+  #vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
+    content: "";
+
+    z-index: 1;
+
+    position: absolute;
+
+    top: 3px;
+    left: 10px;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("/img/icon-tick.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .order__radio {
+    display: none;
+  }
+
+  .order__radio-label {
+    cursor: pointer;
+
+    margin-left: 88px;
+  }
+
+  .order__radio-label::before {
+    content: "";
+
+    position: absolute;
+
+    top: -9px;
+    left: 28px;
+
+    width: 38px;
+    height: 38px;
+
+    background-color: white;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+  }
+
+  #loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
+  #gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
+  #need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
+    content: "";
+
+    position: absolute;
+
+    top: 2px;
+    left: 39px;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: #68b738;
+    border-radius: 50%;
   }
 
   .order__fieldset--name {
@@ -328,6 +421,11 @@
 
   .order__fieldset--additional .order__item {
     margin-bottom: 32px;
+    margin-right: 94px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .order__item {
@@ -361,11 +459,7 @@
   }
 
   .order__list--additional .order__item {
-    width: 300px;
-  }
-
-  .order__radio-label {
-    margin-left: 20px;
+    width: 250px;
   }
 
   .order__submit-button {
@@ -406,6 +500,10 @@
     align-items: center;
 
     width: 570px;
+  }
+
+  .order__submit {
+    padding-bottom: 85px;
   }
 
   .order__submit-button {

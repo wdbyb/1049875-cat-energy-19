@@ -16,6 +16,12 @@
     padding: 55px 30px;
 
     border-bottom: 0;
+
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 28px;
   }
 
   .social__logo--fb {
@@ -37,5 +43,9 @@
 @media (min-width: 1440px) {
   .social {
     padding: 0;
+  }
+
+  .social__item {
+    margin-right: 28px;
   }
 }

@@ -25,6 +25,10 @@
 @media (min-width: 768px) {
   .intro {
     margin-bottom: 30px;
+
+    &--catalog {
+      margin-bottom: 36px;
+    }
   }
 
   .intro__title {

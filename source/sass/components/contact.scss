@@ -58,6 +58,7 @@
     width: auto;
 
     padding: 65px 70px;
+    padding-bottom: 60px;
   }
 
   .contact__title {
@@ -71,6 +72,7 @@
 
   .contact__image {
     margin: 0;
+    margin-top: -7px;
 
     width: 100%;
     height: 400px;
@@ -79,9 +81,17 @@
   .contact__address {
     width: 160px;
 
+    margin-left: 306px;
+
     text-align: right;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
+  }
+
+  .contact__address-city {
+    display: block;
+
+    margin-top: 18px;
   }
 }
 
@@ -90,14 +100,20 @@
     min-height: 0;
   }
 
+  .contact__image {
+    margin: 0;
+  }
+
   .contact__top-block {
     position: absolute;
 
     width: 420px;
 
     padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 60px;
 
-    top: 100px;
+    top: 95px;
     left: 110px;
   }
 
@@ -105,5 +121,12 @@
     margin-left: 90px;
 
     text-align: left;
+    line-height: 20px;
+  }
+
+  .contact__address-city {
+    display: block;
+
+    margin-top: 16px;
   }
 }

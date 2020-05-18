@@ -54,37 +54,52 @@
   .page-footer__logo-footer {
     width: 150px;
 
-    margin-left: 22px;
+    margin-left: 21px;
+    margin-right: 0;
+    margin-top: 64px;
+    margin-bottom: 58px;
 
-    padding: 33px 0;
-    border-bottom: 0;
+
+    padding: 0;
+
+    border: none;
   }
 
   .page-footer__social {
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 147px;
+    margin-right: 84px;
   }
 
   .page-footer__academy {
-    width: 180px;
+    width: 200px;
 
-    margin-right: 12px;
+    padding: 0;
+
+    margin: 0;
 
     &-name {
-      margin-right: 14px;
+      margin-right: 18px;
     }
   }
 }
 
 @media (min-width: 1440px) {
   .page-footer {
-    padding: 52px 0;
+    padding: 0;
   }
 
   .page-footer__logo-footer {
     margin-left: 100px;
+    margin-right: 325px;
+    margin-top: 61px;
+    margin-bottom: 61px;
+
 
     padding: 0;
+  }
+
+  .page-footer__social {
+    margin-right: 338px;
   }
 
   .page-footer__academy {
