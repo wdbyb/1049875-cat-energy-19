@@ -333,6 +333,12 @@
 
   .order__item {
     position: relative;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .order__fieldset {
@@ -557,14 +563,6 @@
     }
   }
 
-  .order__item {
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .order__title {
     font-size: 36px;
     line-height: 36px;
@@ -674,6 +672,8 @@
 
   .order__checkbox-label {
     cursor: pointer;
+
+    margin-left: 58px;
   }
 
   .order__checkbox-label::before {
@@ -931,10 +931,6 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
-  }
-
-  .order__checkbox-label {
-    margin-left: 58px;
   }
 
   .order__must-info {
