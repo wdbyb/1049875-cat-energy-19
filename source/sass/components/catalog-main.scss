@@ -59,7 +59,7 @@
   color: #444444;
   font-size: 12px;
   line-height: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -87,6 +87,8 @@
 }
 
 .catalog-main__watch-more {
+  position: relative;
+
   margin-top: 76px;
   margin-left: 60px;
   margin-bottom: 8px;
@@ -96,6 +98,22 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    top: -52px;
+    left: 85px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
 
 .catalog-main__more-description {
@@ -106,7 +124,7 @@
   line-height: 16px;
   color: #444444;
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
 }
 
 .catalog-main__more-link {
@@ -228,7 +246,7 @@
     color: #444444;
     font-size: 16px;
     line-height: 16px;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Roboto", sans-serif;
     font-weight: 400;
   }
 
@@ -384,7 +402,7 @@
     color: #444444;
     font-size: 16px;
     line-height: 16px;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Roboto", sans-serif;
     font-weight: 400;
   }
 

@@ -71,7 +71,7 @@
 
   margin-bottom: 12px;
 
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
 }
 
 .catalog-additional__col-name {
@@ -106,7 +106,7 @@
   line-height: 20px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
   text-align: center;
 
   &::before {
@@ -122,9 +122,15 @@
     top: 0;
     left: 20px;
 
+    background-color: #68b738;
     background-image: url("../img/gift-photo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 
   &::after {
@@ -264,6 +270,11 @@
       left: 30px;
 
       background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+        background-size: cover;
+      }
     }
 
     &::after {
@@ -356,6 +367,11 @@
       height: 289px;
 
       background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
 
     &::after {

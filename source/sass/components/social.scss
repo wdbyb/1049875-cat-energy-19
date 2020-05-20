@@ -10,13 +10,17 @@
 
 .social__item {
   margin-right: 37px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .social {
     align-items: center;
 
-    width: 180px;
+    width: auto;
 
     padding: 55px 30px;
 
@@ -27,6 +31,10 @@
 
   .social__item {
     margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .social__logo--fb {

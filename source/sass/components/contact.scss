@@ -17,6 +17,10 @@
   padding-bottom: 27px;
 
   background-color: white;
+
+  &--grey {
+    background-color: #f2f2f2;
+  }
 }
 
 .contact--catalog-form {
@@ -37,7 +41,7 @@
   margin-left: 14px;
 
   color: #444444;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
@@ -115,6 +119,10 @@
 
     top: 95px;
     left: 110px;
+
+    &--grey {
+      background-color: #ffffff;
+    }
   }
 
   .contact__address {
