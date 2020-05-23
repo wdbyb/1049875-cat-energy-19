@@ -8,14 +8,12 @@
   line-height: 60px;
   color: #111111;
   font-weight: 400;
-}
 
-/* комментарий */
+  &--catalog {
+    padding-bottom: 28px;
 
-.intro--catalog .intro__title {
-  padding-bottom: 28px;
-
-  border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
 }
 
 .intro__description {
@@ -33,10 +31,6 @@
 @media (min-width: 768px) {
   .intro {
     margin-bottom: 30px;
-
-    &--catalog {
-      margin-bottom: 36px;
-    }
   }
 
   .intro__title {
@@ -46,12 +40,14 @@
     margin-left: 30px;
 
     font-size: 60px;
-  }
 
-  .intro--catalog .intro__title {
-    padding-bottom: 42px;
+    &--catalog {
+      padding-bottom: 42px;
 
-    border: none;
+      border: none;
+
+      margin-bottom: 36px;
+    }
   }
 
   .intro__description {

@@ -42,8 +42,10 @@
 
   width: 85px;
 
-  padding: 13px 18px;
+  padding: 13px 20px;
   padding-bottom: 18px;
+
+  margin-right: 30px;
 
   text-transform: uppercase;
   text-align: center;
@@ -53,6 +55,10 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .example__item-low {
@@ -87,7 +93,7 @@
 }
 
 .example__scale {
-  position: relative;
+  display: flex;
 
   text-align: center;
   color: #111111;
@@ -98,36 +104,30 @@
 
 .example__scale-was,
 .example__scale-will {
-  position: absolute;
-
   font-size: 16px;
 }
 
 .example__scale-was {
-  top: 4px;
-  left: 64px;
+  margin-left: 64px;
+  margin-right: 18px;
 }
 
 .example__scale-will {
-  top: 4px;
-  right: 59px;
+  margin-left: 18px;
 }
 
 .example__scale-line {
-  position: absolute;
-
-  top: 6px;
-  left: 120px;
-
   width: 84px;
   height: 14px;
+
+  margin-top: 5px;
 
   background-color: #dcdcdc;
   border-radius: 7px;
 }
 
 .example__scale-button {
-  position: absolute;
+  position: relative;
 
   top: 0;
   left: 0;
@@ -176,8 +176,6 @@
   }
 
   .example__scale {
-    position: relative;
-
     text-align: center;
     color: #111111;
     font-size: 16px;
@@ -187,29 +185,19 @@
 
   .example__scale-was,
   .example__scale-will {
-    position: absolute;
+    font-size: 20px;
   }
 
   .example__scale-was {
-    top: -5px;
-    left: 98px;
-
-    font-size: 20px;
+    margin-left: 98px;
+    margin-right: 24px;
   }
 
   .example__scale-will {
-    top: -5px;
-    right: 100px;
-
-    font-size: 20px;
+    margin-left: 21px;
   }
 
   .example__scale-line {
-    position: absolute;
-
-    top: 3px;
-    left: 170px;
-
     width: 428px;
     height: 6px;
 
@@ -218,7 +206,7 @@
   }
 
   .example__scale-button {
-    position: absolute;
+    position: relative;
 
     top: -14px;
     left: 198px;

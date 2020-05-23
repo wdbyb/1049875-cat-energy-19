@@ -10,6 +10,13 @@
   text-transform: uppercase;
 }
 
+.order__name,
+.order__email,
+.order__tel,
+.order__comment {
+  border: 1px solid #e6e6e6;
+}
+
 .order__fieldset {
   padding: 0 20px;
 }
@@ -317,6 +324,10 @@
   padding: 13px;
 
   resize: none;
+}
+
+.order__comment-label {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -927,6 +938,10 @@
 
   .order__fieldset--additional .order__item {
     margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
