@@ -46,10 +46,10 @@
   border: 1px solid #cecece;
 }
 
-#sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
-#water:checked ~ .order__checkbox-label[for="water"]::after,
-#milk:checked ~ .order__checkbox-label[for="milk"]::after,
-#vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
+.order__checkbox--sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
+.order__checkbox--water:checked ~ .order__checkbox-label[for="water"]::after,
+.order__checkbox--milk:checked ~ .order__checkbox-label[for="milk"]::after,
+.order__checkbox--vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
   content: "";
 
   z-index: 1;
@@ -93,9 +93,9 @@
   border-radius: 50%;
 }
 
-#loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
-#gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
-#need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
+.order__radio--loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
+.order__radio--gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
+.order__radio--need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
   content: "";
 
   position: absolute;
@@ -381,10 +381,10 @@
     border: 1px solid #cecece;
   }
 
-  #sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
-  #water:checked ~ .order__checkbox-label[for="water"]::after,
-  #milk:checked ~ .order__checkbox-label[for="milk"]::after,
-  #vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
+  .order__checkbox--sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
+  .order__checkbox--water:checked ~ .order__checkbox-label[for="water"]::after,
+  .order__checkbox--milk:checked ~ .order__checkbox-label[for="milk"]::after,
+  .order__checkbox--vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
     content: "";
 
     z-index: 1;
@@ -428,9 +428,9 @@
     border-radius: 50%;
   }
 
-  #loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
-  #gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
-  #need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
+  .order__radio--loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
+  .order__radio--gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
+  .order__radio--need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
     content: "";
 
     position: absolute;
@@ -702,10 +702,10 @@
     border: 1px solid #cecece;
   }
 
-  #sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
-  #water:checked ~ .order__checkbox-label[for="water"]::after,
-  #milk:checked ~ .order__checkbox-label[for="milk"]::after,
-  #vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
+  .order__checkbox--sweetener:checked ~ .order__checkbox-label[for="sweetener"]::after,
+  .order__checkbox--water:checked ~ .order__checkbox-label[for="water"]::after,
+  .order__checkbox--milk:checked ~ .order__checkbox-label[for="milk"]::after,
+  .order__checkbox--vitamins:checked ~ .order__checkbox-label[for="vitamins"]::after {
     content: "";
 
     z-index: 1;
@@ -749,9 +749,9 @@
     border-radius: 50%;
   }
 
-  #loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
-  #gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
-  #need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
+  .order__radio--loss-weight:checked ~ .order__radio-label[for="loss-weight"]::after,
+  .order__radio--gain-weight:checked ~ .order__radio-label[for="gain-weight"]::after,
+  .order__radio--need-advice:checked ~ .order__radio-label[for="need-advice"]::after {
     content: "";
 
     position: absolute;
