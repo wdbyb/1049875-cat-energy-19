@@ -61,20 +61,20 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .intro {
     margin-bottom: 18px;
   }
 
   .intro__description {
     margin: 0;
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .intro__title {
     padding: 56px 0;
 
-    margin-left: 110px;
+    margin-left: 40px;
     margin-bottom: 0;
 
     &--catalog {

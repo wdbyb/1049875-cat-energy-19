@@ -283,7 +283,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .catalog-additional__list-bonus-wrapper {
     display: flex;
 
@@ -292,7 +292,7 @@
 
   .catalog-additional__main-title {
     margin-bottom: 55px;
-    margin-left: 110px;
+    margin-left: 40px;
 
     &::before {
       left: -110px;
@@ -314,7 +314,7 @@
   .catalog-additional__list {
     width: 895px;
 
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .catalog-additional__item {
@@ -325,6 +325,10 @@
 
     border: none;
     border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   .catalog-additional__info {

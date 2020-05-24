@@ -12,8 +12,12 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .container {
-    width: 1440px;
+    width: 1300px;
+
+    &--map {
+      width: 100%;
+    }
   }
 }

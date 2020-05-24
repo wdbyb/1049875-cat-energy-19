@@ -635,7 +635,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .order {
     min-height: 1200px;
   }
@@ -664,7 +664,7 @@
     padding: 15px 0;
 
     margin-top: 25px;
-    margin-left: 110px;
+    margin-left: 40px;
     margin-right: 0;
 
     font-size: 20px;
@@ -854,7 +854,7 @@
 
   .order__fieldset--name {
     padding-right: 30px;
-    padding-left: 110px;
+    padding-left: 40px;
     padding-top: 33px;
   }
 
@@ -863,7 +863,7 @@
   }
 
   .order__fieldset--contact {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .order__fieldset--contact .order__title {
@@ -897,7 +897,7 @@
   }
 
   .order__fieldset--comment {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .order__fieldset--comment .order__title {
@@ -919,7 +919,7 @@
   }
 
   .order__fieldset--additional {
-    padding: 0 110px;
+    padding: 0 40px;
   }
 
   .order__fieldset--additional .order__title {

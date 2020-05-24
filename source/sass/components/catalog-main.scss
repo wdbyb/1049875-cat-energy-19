@@ -150,8 +150,7 @@
     margin-right: 60px;
     margin-left: 30px;
 
-    background: linear-gradient(to bottom,
-      #ffffff 87px, #f2f2f2 87px);
+    background: linear-gradient(to bottom, #ffffff 87px, #f2f2f2 87px);
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -302,7 +301,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .catalog-main {
     padding: 0;
   }
@@ -311,7 +310,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding: 0 110px;
+    padding: 0 40px;
 
     margin-bottom: 14px;
   }

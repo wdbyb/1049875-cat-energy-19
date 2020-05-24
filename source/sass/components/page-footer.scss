@@ -12,9 +12,11 @@
 }
 
 .page-footer__logo-footer {
-  padding: 34px 96px;
+  padding: 34px 76px;
   padding-top: 38px;
-  padding-bottom: 32px;
+  padding-bottom: 31px;
+
+  margin: 0 20px;
 
   border-bottom: 1px solid #d9d9d9;
 }
@@ -76,20 +78,25 @@
     padding: 0;
 
     margin: 0;
+    margin-right: 22px;
 
     &-name {
-      margin-right: 18px;
+      margin-right: 16px;
     }
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-footer {
     padding: 0;
   }
 
+  .page-footer .container {
+    align-items: center;
+  }
+
   .page-footer__logo-footer {
-    margin-left: 100px;
+    margin-left: 30px;
     margin-right: 0;
     margin-top: 61px;
     margin-bottom: 61px;
@@ -99,11 +106,13 @@
   }
 
   .page-footer__social {
-    margin-right: 338px;
+    flex-grow: 1;
+
+    margin: 0 auto;
   }
 
   .page-footer__academy {
-    margin-right: 102px;
+    margin-right: 32px;
 
     padding: 0;
   }

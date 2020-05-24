@@ -130,7 +130,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .top-bar {
     min-height: 0;
 
@@ -151,7 +151,7 @@
     position: relative;
 
     margin-top: 50px;
-    margin-left: 190px;
+    margin-left: 120px;
 
     font-size: 20px;
     line-height: 20px;
@@ -160,7 +160,7 @@
   .top-bar__title {
     width: 427px;
 
-    margin-left: 190px;
+    margin-left: 120px;
     margin-top: 90px;
 
     color: #000000;
@@ -174,7 +174,7 @@
   .top-bar__description {
     width: 427px;
 
-    margin-left: 190px;
+    margin-left: 120px;
 
     color: #000000;
     font-size: 20px;
@@ -190,7 +190,7 @@
     width: 552px;
     height: 499px;
 
-    left: 530px;
+    left: 460px;
     top: -10px;
 
     z-index: -1;

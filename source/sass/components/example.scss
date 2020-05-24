@@ -247,8 +247,7 @@
   .example__image-area {
     padding-bottom: 72px;
 
-    background: linear-gradient(to bottom,
-      #ffffff 254px, #f2f2f2 254px);
+    background: linear-gradient(to bottom, #ffffff 254px, #f2f2f2 254px);
   }
 
   .example__description {
@@ -309,7 +308,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example {
     display: flex;
 
@@ -321,19 +320,19 @@
   }
 
   .example__text {
-    width: 680px;
+    width: 610px;
 
     margin-top: 70px;
   }
 
   .example__image {
-    margin-left: 5px;
+    margin-left: 0;
     margin-top: 15px;
     margin-bottom: 40px;
   }
 
   .example__image-area {
-    width: 680px;
+    width: 690px;
   }
 
   .example__scale {
@@ -404,13 +403,13 @@
 
   .example__title {
     margin-bottom: 148px;
-    margin-left: 110px;
+    margin-left: 40px;
   }
 
   .example__description {
     width: 435px;
 
-    margin-left: 110px;
+    margin-left: 40px;
     margin-bottom: 66px;
   }
 
@@ -422,7 +421,7 @@
   }
 
   .example__list {
-    padding: 0 110px;
+    padding: 0 40px;
 
     margin-bottom: 55px;
   }
@@ -430,7 +429,7 @@
   .example__price {
     width: 350px;
 
-    margin-left: 88px;
+    margin-left: 18px;
   }
 
   .example__price-number {
