@@ -1,4 +1,6 @@
 .example {
+  position: relative;
+
   background-color: #f2f2f2;
   min-height: 650px;
   padding: 0;
@@ -313,6 +315,20 @@
     display: flex;
 
     min-height: 625px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      top: 206px;
+      left: 0;
+
+      width: 100%;
+      height: 465px;
+
+      background-color: #f2f2f2;
+    }
   }
 
   .example .container {
@@ -333,6 +349,8 @@
 
   .example__image-area {
     width: 690px;
+
+    background: linear-gradient(to bottom, #ffffff 206px, #f2f2f2 206px);
   }
 
   .example__scale {
@@ -341,26 +359,14 @@
 
   .example__scale-was,
   .example__scale-will {
-    position: absolute;
+    font-size: 20px;
   }
 
   .example__scale-was {
-    top: 0;
-    left: 80px;
-
-    font-size: 20px;
-  }
-
-  .example__scale-will {
-    top: 0;
-    right: 30px;
-
-    font-size: 20px;
+    margin-left: 79px;
   }
 
   .example__scale-line {
-    position: absolute;
-
     top: 7px;
     left: 150px;
 
@@ -372,7 +378,7 @@
   }
 
   .example__scale-button {
-    position: absolute;
+    position: relative;
 
     top: -14px;
     left: 198px;
@@ -404,6 +410,10 @@
   .example__title {
     margin-bottom: 148px;
     margin-left: 40px;
+  }
+
+  .example__item-low {
+    background-color: #f2f2f2;
   }
 
   .example__description {
