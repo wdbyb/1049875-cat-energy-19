@@ -525,7 +525,7 @@
   }
 
   .order__comment {
-    width: 629px;
+    width: 628px;
     height: 175px;
 
     padding: 13px;
@@ -886,6 +886,10 @@
 
   .order__fieldset--contact .order__item {
     margin-right: 78px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .order__list--additional .order__item {
