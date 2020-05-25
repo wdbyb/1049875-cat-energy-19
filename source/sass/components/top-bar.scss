@@ -142,6 +142,30 @@
     &::before {
       display: none;
     }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      z-index: -2;
+
+      top: -132px;
+      left: 50%;
+
+      width: 50%;
+      height: 696px;
+
+      background-color: #63a73a;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px auto;
+      background-repeat: no-repeat;
+      background-position: right;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .top-bar__link {

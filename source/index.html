@@ -40,16 +40,18 @@
 
       <section class="top-bar">
         <div class="container">
-          <h2 class="top-bar__title reset-text">Функциональное питание для котов</h2>
-          <p class="top-bar__description reset-text">Занялся собой? Займись котом!</p>
-          <div class="top-bar__image-wrapper">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-              <img class="top-bar__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Коробочка корма">
-            </picture>
+          <div class="top-bar__text-block">
+            <h2 class="top-bar__title reset-text">Функциональное питание для котов</h2>
+            <p class="top-bar__description reset-text">Занялся собой? Займись котом!</p>
+            <div class="top-bar__image-wrapper">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+                <img class="top-bar__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Коробочка корма">
+              </picture>
+            </div>
+            <a class="top-bar__link reset-text button" href="form.html">Подобрать программу</a>
           </div>
-          <a class="top-bar__link reset-text button" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -115,12 +117,12 @@
               <img class="example__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До и после">
             </picture>
             <div class="example__scale">
-              <span class="example__scale-was">Было</span>
+              <p class="example__scale-was">Было</p>
               <div class="example__scale-line">
-                <div class="example__scale-button">
-                </div>
+                <button class="example__scale-button">
+                </button>
               </div>
-              <span class="example__scale-will">Стало</span>
+              <p class="example__scale-will">Стало</p>
             </div>
           </div>
         </div>
