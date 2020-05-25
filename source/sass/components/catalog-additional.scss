@@ -7,9 +7,10 @@
 .catalog-additional__main-title {
   position: relative;
 
-  padding: 28px 0;
+  padding: 26px 0;
+  padding-bottom: 34px;
 
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -17,6 +18,8 @@
   line-height: 24px;
   color: #111111;
   font-weight: 400;
+
+  border-bottom: 1px solid #d9d9d9;
 
   &::after {
     content: "";
@@ -34,11 +37,11 @@
 }
 
 .catalog-additional__item {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   border-bottom: 1px solid #d9d9d9;
 }
@@ -96,7 +99,7 @@
 
   width: 160px;
 
-  margin-top: 35px;
+  margin-top: 38px;
 
   padding-top: 186px;
   padding-bottom: 44px;
@@ -153,13 +156,15 @@
 @media (min-width: 768px) {
   .catalog-additional__main-title {
     margin-left: 68px;
-    margin-bottom: 52px;
+    margin-bottom: 45px;
     margin-top: 12px;
 
     padding-top: 0;
 
     font-size: 36px;
     line-height: 36px;
+
+    border-bottom: none;
 
     &::before {
       content: "";
@@ -291,7 +296,7 @@
   }
 
   .catalog-additional__main-title {
-    margin-bottom: 55px;
+    margin-bottom: 47px;
     margin-left: 40px;
 
     &::before {

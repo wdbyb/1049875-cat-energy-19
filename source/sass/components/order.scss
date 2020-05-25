@@ -150,8 +150,8 @@
 }
 
 .order__fieldset--contact .order__title {
-  padding: 26px 0;
-  padding-bottom: 33px;
+  padding: 30px 0;
+  padding-bottom: 36px;
 
   &::after {
     content: "";
@@ -450,7 +450,7 @@
   }
 
   .order__fieldset--radio {
-    padding-top: 54px;
+    padding-top: 58px;
     padding-right: 66px;
     padding-bottom: 49px;
 
@@ -469,6 +469,7 @@
   }
 
   .order__fieldset--contact .order__title {
+    padding-top: 27px;
     padding-bottom: 75px;
 
     &::before {
@@ -479,7 +480,7 @@
       top: 48px;
       left: -70px;
 
-      width: 40px;
+      width: 30px;
       height: 3px;
 
       background-color: #68b738;
@@ -487,15 +488,15 @@
 
     &::after {
       top: 48px;
-      left: 563px;
+      left: 553px;
 
-      width: 135px;
+      width: 145px;
     }
   }
 
   .order__fieldset--contact .order__item {
     margin: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .order__fieldset--comment .order__title {
@@ -507,20 +508,20 @@
 
       position: absolute;
 
-      top: 62px;
+      top: 66px;
       left: -70px;
 
-      width: 40px;
+      width: 30px;
       height: 3px;
 
       background-color: #68b738;
     }
 
     &::after {
-      top: 62px;
-      left: 230px;
+      top: 66px;
+      left: 220px;
 
-      width: 468px;
+      width: 478px;
     }
   }
 
@@ -548,20 +549,20 @@
 
       position: absolute;
 
-      top: 82px;
+      top: 84px;
       left: -70px;
 
-      width: 40px;
+      width: 30px;
       height: 3px;
 
       background-color: #68b738;
     }
 
     &::after {
-      top: 82px;
-      left: 260px;
+      top: 84px;
+      left: 250px;
 
-      width: 438px;
+      width: 448px;
     }
   }
 
@@ -619,8 +620,9 @@
 
     margin-left: 70px;
     margin-right: 21px;
+    margin-top: 21px;
 
-    padding: 14px;
+    padding: 15px;
 
     font-size: 20px;
   }
