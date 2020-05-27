@@ -111,6 +111,7 @@
   margin-top: 0;
 
   font-size: 16px;
+  text-transform: uppercase;
 
   cursor: pointer;
 }
@@ -198,8 +199,6 @@
   .example__scale-was,
   .example__scale-will {
     margin-top: 0;
-
-    padding-bottom: 5px;
 
     border-bottom: 1px dotted #b8b8b8;
 
@@ -362,7 +361,7 @@
   .example__image {
     margin-left: 0;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
   }
 
   .example__image-area {
@@ -388,7 +387,7 @@
     width: 428px;
     height: 6px;
 
-    margin-top: 7px;
+    margin-top: 12px;
 
     background-color: #dcdcdc;
     border-radius: 3px;

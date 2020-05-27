@@ -4,7 +4,22 @@
 
   position: relative;
 
+  width: 100%;
+
   min-height: 200px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 115px;
+
+    z-index: 1;
+
+    background-color: white;
+  }
 }
 
 .contact__top-block {
@@ -64,6 +79,10 @@
 @media (min-width: 768px) {
   .contact {
     min-height: 600px;
+
+    &::before {
+      height: 203px;
+    }
   }
 
   .contact__top-block {
@@ -119,6 +138,10 @@
 @media (min-width: 1300px) {
   .contact {
     min-height: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .contact__image {
