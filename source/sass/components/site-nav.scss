@@ -23,6 +23,14 @@
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -75,11 +83,11 @@
 
 @media (min-width: 1300px) {
   .site-nav {
-    width: 524px;
+    width: 520px;
   }
 
   .site-nav__item {
-    margin-right: 34px;
+    margin-right: 35px;
 
     padding: 10px 0;
   }

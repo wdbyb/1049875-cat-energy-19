@@ -1,11 +1,17 @@
 .main-nav {
   position: relative;
 
-  display: block;
-
   width: 320px;
 
   border-top: 1px solid #e6e6e6;
+
+  &--show {
+    display: block;
+  }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
@@ -36,10 +42,11 @@
 
 @media (min-width: 1300px) {
   .main-nav {
-    width: 484px;
+    width: 520px;
 
     margin-top: 54px;
     margin-left: 440px;
+    margin-right: 0;
   }
 
   .main-nav--index .site-nav__link {

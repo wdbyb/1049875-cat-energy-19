@@ -133,6 +133,15 @@
   background-color: #f2f2f2;
   text-transform: uppercase;
   font-weight: 400;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: #c3c3c3;
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: 768px) {

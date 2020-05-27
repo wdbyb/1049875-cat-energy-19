@@ -64,6 +64,14 @@
   line-height: 18px;
   background-color: #68b738;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #99c684;
+  }
 }
 
 @media (min-width: 768px) {
@@ -140,7 +148,19 @@
     flex-direction: column;
 
     &::before {
-      display: none;
+      content: "";
+
+      position: absolute;
+
+      z-index: -3;
+
+      top: -132px;
+      left: 0;
+
+      width: 100%;
+      height: 696px;
+
+      background: linear-gradient(to right, #ffffff 50%, #63a73a 50%);
     }
 
     &::after {
