@@ -5,7 +5,7 @@
   min-height: 650px;
   padding: 0;
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 34px;
 }
 
 .example__title {
@@ -129,7 +129,7 @@
   width: 84px;
   height: 14px;
 
-  margin-top: 2px;
+  margin-top: 6px;
 
   background-color: #dcdcdc;
   border-radius: 7px;
@@ -168,7 +168,7 @@
 
 .example__image {
   margin-left: auto;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 @media (min-width: 768px) {
@@ -218,7 +218,7 @@
     width: 428px;
     height: 6px;
 
-    margin-top: 5px;
+    margin-top: 10px;
 
     background-color: #dcdcdc;
     border-radius: 3px;
@@ -257,14 +257,14 @@
   .example__image {
     margin-top: 85px;
     margin-left: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     width: 690px;
     height: 517px;
   }
 
   .example__image-area {
-    padding-bottom: 48px;
+    padding-bottom: 66px;
 
     background: linear-gradient(to bottom, #ffffff 254px, #f2f2f2 254px);
   }

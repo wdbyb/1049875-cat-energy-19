@@ -20,6 +20,10 @@
 
     background-color: white;
   }
+
+  &--catalog-form::before {
+    background-color: #f2f2f2;
+  }
 }
 
 .contact__top-block {
